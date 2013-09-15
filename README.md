@@ -16,11 +16,11 @@ Please backup and use at your own risk.
 
 via [Curl](http://curl.haxx.se/)
 
-    curl -L http://j.mp/attomosvim | bash
+    curl -L http://j.mp/attomosvim | sh
 
 via [wget](http://www.gnu.org/software/wget/)
 
-    wget --no-check-certificate http://j.mp/attomosvim -O - | bash
+    wget --no-check-certificate http://j.mp/attomosvim -O - | sh
 
 ## Manual way
 1.  Clone the repo
@@ -30,10 +30,10 @@ via [wget](http://www.gnu.org/software/wget/)
 2.  Put this on your `.vimrc`
 
         source ~/.attomosvim/vimrc
-        colorscheme default " you can change it later
+        colorscheme fisa " you can change it later
         set bg=dark         " you can change it later
         source ~/.attomosvim/goodspell.vim
-        "let g:languagetool_jar="<path_to_languagetool_jar>"
+        "let g:languagetool_jar=""
 
     **NOTE** keep the line `source ~/.attomosvim/goodspell.vim` below your colorscheme and background settings.  
     This won't mess up when Vim highlighting bad misspelled words.
@@ -48,9 +48,10 @@ Thanks [fisa-vim-config](https://github.com/fisadev/fisa-vim-config) for awesome
 automatic Vundle set up at the first time Vim run without Vundle installed.
 
 # List of bundles
-Not yet bro
+Coming soon
 
-## TODO (write instructions for ctags, LanguageTool, linters, special chars, powerline font and YCM)
+## TODO
+- Write instructions for ctags, LanguageTool, linters, special chars, powerline font and YCM
 - [Exuberant Ctags](http://ctags.sourceforge.net/)
 - [flake8](http://flake8.readthedocs.org/en/latest/)
 - [Powerline font](https://github.com/Lokaltog/powerline-fonts)

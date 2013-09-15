@@ -84,6 +84,10 @@ autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 set winminheight=0                                  " Windows height only 0
 " }}}
 
+" If your NERDTree look sucks, change it to 0
+let NERDTreeDirArrows=1
+
+
 " source them {{{
 exec "source " . s:dirname . "/autocomplete.vim"
 exec "source " . s:dirname . "/backup.vim"
