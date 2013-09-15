@@ -1,7 +1,7 @@
 # attomos's Vim configurations
-If you think this is good for you, use it, hack it and share it.  
-These configurations have been used with [Vim](http://www.vim.org) 7.4 on my MacBook OSX 10.8.4  
-and Ubuntu Precise on my Vagrant environment.
+If you think this is good for you, use it, hack it and share it. These
+configurations have been used with [Vim](http://www.vim.org) 7.4 on my MacBook
+OSX 10.8.4 and Ubuntu Precise on my Vagrant environment.
 
 # Try it (This won't harm your old vimrc)
 
@@ -48,7 +48,84 @@ Thanks [fisa-vim-config](https://github.com/fisadev/fisa-vim-config) for awesome
 automatic Vundle set up at the first time Vim run without Vundle installed.
 
 # List of bundles
-Coming soon
+**Coming soon!**
+
+### General Programming
+- Lokaltog/vim-easymotion
+- scrooloose/syntastic
+- scrooloose/nerdtree
+- scrooloose/nerdcommenter
+- kien/ctrlp.vim
+- tacahiroy/ctrlp-funky
+- fisadev/vim-ctrlp-cmdpalette
+- mattn/ctrlp-mark
+- git://github.com/Valloric/YouCompleteMe.git
+- tpope/vim-unimpaired
+- tpope/vim-surround
+- tpope/vim-repeat
+- tpope/vim-abolish
+- spf13/vim-autoclose
+- majutsushi/tagbar
+- junegunn/vim-easy-align
+- IndexedSearch
+- vim-scripts/PreserveNoEOL
+
+### Git
+- tpope/vim-fugitive
+- gregsexton/gitv
+- mattn/gist-vim
+- mhinz/vim-signify
+
+### For each file type
+#### CSS related
+- hail2u/vim-css3-syntax
+
+#### CSV
+- chrisbra/csv.vim
+
+#### JS related
+- pangloss/vim-javascript
+- briancollins/vim-jst
+- kchmck/vim-coffee-script
+- moll/vim-node
+- digitaltoad/vim-jade
+
+#### HTML
+- matchit.zip
+
+#### Markdown
+- tpope/vim-markdown
+
+#### Puppet
+- Puppet-Syntax-Highlighting
+
+#### Python
+- vim-scripts/python_match.vim
+- hynek/vim-python-pep8-indent
+
+#### YAML
+- avakhov/vim-yaml
+
+### etc.
+- juvenn/mustache.vim
+
+### Utilities
+- bling/vim-airline
+- Valloric/MatchTagAlways
+- attomos/ultisnips
+- spiiph/vim-space
+- sjl/gundo.vim
+- greyblake/vim-preview
+- vim-scripts/sessionman.vim
+- vim-scripts/restore_view.vim
+- vim-scripts/LanguageTool
+- Shougo/unite.vim
+- mattn/webapi-vim
+
+### Colorscheme
+- altercation/vim-colors-solarized
+- flazz/vim-colorschemes
+- fisadev/fisa-vim-colorscheme
 
 ## TODO
 - Write instructions for ctags, LanguageTool, linters, special chars, powerline font and YCM

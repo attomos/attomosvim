@@ -29,7 +29,7 @@ Bundle 'gregsexton/gitv'
 Bundle 'mattn/gist-vim'
 Bundle 'mhinz/vim-signify'
 
-" Specific file type
+" For each file type
 " CSS related
 Bundle 'hail2u/vim-css3-syntax'
 " CSV
@@ -67,7 +67,7 @@ Bundle 'vim-scripts/LanguageTool'
 Bundle 'Shougo/unite.vim'
 Bundle 'mattn/webapi-vim'
 
-" Color
+" Colorscheme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'fisadev/fisa-vim-colorscheme'
