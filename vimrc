@@ -16,7 +16,7 @@ endif
 filetype off " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-exec "source " . s:dirname . "/test.vim"
+exec "source " . s:dirname . "/vundles.vim"
 filetype plugin indent on " required!
 
 if install_vundle == 0
