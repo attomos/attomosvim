@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Let's try it
-git clone git@github.com:attomos/attomosvim.git ~/.attomosvim
+git clone https://github.com/attomos/attomosvim ~/.attomosvim
 echo source ~/.attomosvim/vimrc >> ~/.vimrc
 echo colorscheme default >> ~/.vimrc
 echo set bg=dark >> ~/.vimrc
