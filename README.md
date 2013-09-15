@@ -16,11 +16,11 @@ Please backup and use at your own risk.
 
 via [Curl](http://curl.haxx.se/)
 
-    curl -L https://raw.github.com/attomos/attomosvim/master/install.sh | bash
+    curl -L http://j.mp/attomosvim | bash
 
 via [wget](http://www.gnu.org/software/wget/)
 
-    wget --no-check-certificate https://raw.github.com/attomos/attomosvim/master/install.sh -O - | bash
+    wget --no-check-certificate http://j.mp/attomosvim -O - | bash
 
 ## Manual way
 1.  Clone the repo
