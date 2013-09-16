@@ -42,6 +42,7 @@ Bundle 'moll/vim-node'
 Bundle 'digitaltoad/vim-jade'
 " HTML
 Bundle 'matchit.zip'
+Bundle 'othree/html5.vim'
 " Markdown
 Bundle 'tpope/vim-markdown'
 " Puppet
