@@ -122,3 +122,7 @@ nnoremap <silent> <leader>tt :TagbarToggle<CR>
 
 " Tabman
 let g:tabman_toggle = '<leader>tm'
+
+" https://vimeo.com/67215271
+" now <C-c> won't break the autoclose {} again
+inoremap <C-c> <Esc>
