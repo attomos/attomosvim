@@ -1,5 +1,6 @@
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={{{,}}} foldlevel=0 foldmethod=marker spell:
 set nocompatible " no vi compatible
+
 let s:dirname = expand("<sfile>:p:h")
 
 " Setting up Vundle {{{
@@ -84,9 +85,31 @@ autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 set winminheight=0                                  " Windows height only 0
 " }}}
 
-" If your NERDTree look sucks, change it to 0
-let NERDTreeDirArrows=1
+" CtrlP  {{{
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+            \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
+" On Windows use "dir" as fallback command.
+if has('win32') || has('win64')
+    let g:ctrlp_user_command = {
+                \ 'types': {
+                \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+                \ },
+                \ 'fallback': 'dir %s /-n /b /s /a-d'
+                \ }
+else
+    let g:ctrlp_user_command = {
+                \ 'types': {
+                \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+                \ },
+                \ 'fallback': 'find %s -type f'
+                \ }
+endif
+" }}}
 
 " source them {{{
 exec "source " . s:dirname . "/autocomplete.vim"
@@ -96,4 +119,12 @@ exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"
 exec "source " . s:dirname . "/jsdoc.vim"
 exec "source " . s:dirname . "/mappings.vim"
+" }}}
+
+" Take a look at it {{{
+" If your NERDTree look sucks, change it to 0
+let NERDTreeDirArrows=1
+
+" For AngularJS especially
+let g:syntastic_html_checkers=[]
 " }}}

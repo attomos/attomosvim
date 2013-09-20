@@ -3,6 +3,9 @@ If you think this is good for you, use it, hack it and share it. These
 configurations have been used with [Vim](http://www.vim.org) 7.4 on my MacBook
 OSX 10.8.4 and Ubuntu Precise on my Vagrant environment.
 
+Inspired by [spf13-vim](https://github.com/dtinth/.vimrc), [dtinth's
+.vimrc](https://github.com/dtinth/.vimrc) and [fisa-vim-config](https://github.com/fisadev/fisa-vim-config)
+
 # Try it (This won't harm your old vimrc)
 
     git clone git@github.com:attomos/attomosvim.git ~/.attomosvim
@@ -128,7 +131,7 @@ automatic Vundle set up at the first time Vim run without Vundle installed.
 - fisadev/fisa-vim-colorscheme
 
 ## TODO
-- Write instructions for ctags, LanguageTool, linters, special chars, powerline font and YCM
+- Write instructions for ctags, LanguageTool, linters, special chars, g:airline_mode_map config,  powerline font and YCM
 - [Exuberant Ctags](http://ctags.sourceforge.net/)
 - [flake8](http://flake8.readthedocs.org/en/latest/)
 - [Powerline font](https://github.com/Lokaltog/powerline-fonts)
