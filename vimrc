@@ -114,6 +114,7 @@ endif
 " source them {{{
 exec "source " . s:dirname . "/autocomplete.vim"
 exec "source " . s:dirname . "/backup.vim"
+exec "source " . s:dirname . "/chords.vim"
 exec "source " . s:dirname . "/disablearrowkeys.vim"
 exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"
@@ -123,7 +124,7 @@ exec "source " . s:dirname . "/mappings.vim"
 
 " Take a look at it {{{
 " If your NERDTree look sucks, change it to 0
-let NERDTreeDirArrows=1
+"let NERDTreeDirArrows=1
 
 " For AngularJS especially
 let g:syntastic_html_checkers=[]

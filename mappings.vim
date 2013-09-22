@@ -40,7 +40,7 @@ map zl zL
 map zh zH
 
 " NERDTree
-map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+"map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 " Code folding options
 nmap <leader>f0 :set foldlevel=0<CR>
