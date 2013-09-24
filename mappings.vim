@@ -73,7 +73,7 @@ nnoremap <silent> <leader>gp :Git push<CR>
 map <leader>l :set list!<CR>
 
 " Toggle spelling
-nmap <leader>s :set spell!<CR>
+nmap <leader>ss :set spell!<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
 " Adapted some to make yourself comfy
@@ -81,13 +81,7 @@ nnoremap <leader>gg :CtrlPBufTag<CR>
 nnoremap <leader>G :CtrlPBufTagAll<CR>
 nnoremap <leader>F :CtrlPLine<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
-nnoremap <leader>C : CtrlPCmdPalette<CR>
 nnoremap <Leader>fu :CtrlPFunky<CR>
-nnoremap <leader>fs :CtrlPMark<CR>
-
-" yank to clipboard maps
-nnoremap <C-y> "+y
-vnoremap <C-y> "+y
 
 " Allow using the repeat operator with a visual selection (!)
 " http://stackoverflow.com/a/8064607/127816
@@ -126,3 +120,7 @@ let g:tabman_toggle = '<leader>tm'
 " https://vimeo.com/67215271
 " now <C-c> won't break the autoclose parentheses
 inoremap <C-c> <Esc>
+
+" custom commands
+map <leader>r :call custom_command#run()<cr>
+map <leader>sc :call custom_command#set()<cr>

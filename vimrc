@@ -85,36 +85,11 @@ autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 set winminheight=0                                  " Windows height only 0
 " }}}
 
-" CtrlP  {{{
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
-
-" On Windows use "dir" as fallback command.
-if has('win32') || has('win64')
-    let g:ctrlp_user_command = {
-                \ 'types': {
-                \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
-                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-                \ },
-                \ 'fallback': 'dir %s /-n /b /s /a-d'
-                \ }
-else
-    let g:ctrlp_user_command = {
-                \ 'types': {
-                \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
-                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-                \ },
-                \ 'fallback': 'find %s -type f'
-                \ }
-endif
-" }}}
-
 " source them {{{
 exec "source " . s:dirname . "/autocomplete.vim"
 exec "source " . s:dirname . "/backup.vim"
 exec "source " . s:dirname . "/chords.vim"
+exec "source " . s:dirname . "/custom_command.vim"
 exec "source " . s:dirname . "/disablearrowkeys.vim"
 exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"

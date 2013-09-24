@@ -1,4 +1,4 @@
-" Spell checking and highlight, British English
+" Spell checking and proper highlighting, British English
 set spell
 set spelllang=en_gb
 hi clear SpellBad
