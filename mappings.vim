@@ -97,9 +97,6 @@ vmap <C-Down> ]egv
 " Gundo
 nmap <F5> :GundoToggle<CR>
 
-" vim-easy-align
-vnoremap <silent> <Enter> :EasyAlign<CR>
-
 " Use <F2> to toggle between 'paste' and 'nopaste'
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
