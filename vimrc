@@ -73,7 +73,7 @@ set virtualedit=onemore                             " Allow for cursor beyond la
 set history=1000                                    " Store a ton of history (default is 20)
 set tabpagemax=15                                   " Only show 15 tabs
 set showmode                                        " Display the current mode
-set cursorline                                      " Highlight current line
+"set cursorline                                      " Highlight current line
 highlight clear SignColumn                          " SignColumn should match background for
                                                     " things like signify
 set ruler                                           " Show the ruler
@@ -90,6 +90,7 @@ exec "source " . s:dirname . "/autocomplete.vim"
 exec "source " . s:dirname . "/backup.vim"
 exec "source " . s:dirname . "/chords.vim"
 exec "source " . s:dirname . "/custom_command.vim"
+exec "source " . s:dirname . "/ctrlpconf.vim"
 exec "source " . s:dirname . "/disablearrowkeys.vim"
 exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"
