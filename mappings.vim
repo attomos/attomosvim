@@ -1,13 +1,17 @@
 let mapleader = ","
 
-" enter: clear highlight
+" <CR> to clear matched patterns
+nnoremap <CR> :noh<CR>
 " from garybernhardt/dotfiles
-function! MapCR()
-    nnoremap <cr> :nohlsearch<cr>
-endfunction
-call MapCR()
-autocmd! CmdwinEnter * :unmap <cr>
-autocmd! CmdwinLeave * :call MapCR()
+"function! MapCR()
+    "nnoremap <cr> :nohlsearch<cr>
+"endfunction
+"call MapCR()
+"autocmd! CmdwinEnter * :unmap <cr>
+"autocmd! CmdwinLeave * :call MapCR()
+
+" vim-easy-align
+vnoremap <silent> <Enter> :EasyAlign<cr>
 
 " Shortcuts
 " Change Working Directory to that of the current file
@@ -40,6 +44,7 @@ map zl zL
 map zh zH
 
 " NERDTree
+map <leader>e :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 " Code folding options
@@ -76,7 +81,8 @@ map <leader>l :set list!<CR>
 nmap <leader>ss :set spell!<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
-" Adapted some to make yourself comfy
+" Adapted some to make me comfy
+nnoremap <silent> ; :CtrlP<CR>
 nnoremap <leader>gg :CtrlPBufTag<CR>
 nnoremap <leader>G :CtrlPBufTagAll<CR>
 nnoremap <leader>F :CtrlPLine<CR>

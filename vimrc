@@ -102,6 +102,8 @@ exec "source " . s:dirname . "/mappings.vim"
 " If your NERDTree look sucks, change it to 0
 "let NERDTreeDirArrows=1
 
+" Fixed tmux messed up with some colorschemes
+set term=screen-256color
 " For AngularJS especially
 let g:syntastic_html_checkers=[]
 " }}}

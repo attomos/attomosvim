@@ -26,18 +26,19 @@ function! Chords#setup()
   " arg still hard
   "Arpeggio inoremap arg arguments
   Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O<Tab>
-  " #bcbk
-  Arpeggio inoremap sd <C-w>
-  Arpeggio inoremap kl <C-w>
   Arpeggio inoremap rea fs.readFile
   Arpeggio inoremap jsp JSON.parse
   Arpeggio inoremap jst JSON.stringify
   Arpeggio inoremap bin .bind
   Arpeggio inoremap thr throw new Error()<left>
+  " #bcbk 2013
+  Arpeggio inoremap sd <C-w>
+  Arpeggio inoremap kl <C-w>
+  Arpeggio nnoremap jkl ciw
   " me
-  Arpeggio nnoremap ciw ciw
   Arpeggio nnoremap ci{ ciw{
   Arpeggio nnoremap ci} ciw}
+  Arpeggio nnoremap sdf :set paste!<CR>
 endfunction
 
 autocmd VimEnter * call Chords#setup()

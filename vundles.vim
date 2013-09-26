@@ -12,7 +12,8 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'majutsushi/tagbar'
-"Bundle 'junegunn/vim-easy-align'
+Bundle 'scrooloose/nerdtree'
+Bundle 'junegunn/vim-easy-align'
 Bundle 'kana/vim-arpeggio'
 
 " Hold on!
@@ -50,7 +51,8 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'Lokaltog/powerline'
-Bundle 'Valloric/MatchTagAlways'
+Bundle 'bling/vim-airline'
+"Bundle 'Valloric/MatchTagAlways'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
 Bundle 'greyblake/vim-preview'
