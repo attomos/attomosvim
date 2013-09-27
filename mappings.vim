@@ -1,4 +1,4 @@
-let mapleader = ","
+let mapleader = " "
 
 " <CR> to clear matched patterns
 nnoremap <CR> :noh<CR>
@@ -44,7 +44,7 @@ map zl zL
 map zh zH
 
 " NERDTree
-map <leader>e :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <leader>nt :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 " Code folding options
@@ -82,7 +82,6 @@ nmap <leader>ss :set spell!<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
 " Adapted some to make me comfy
-nnoremap <silent> ; :CtrlP<CR>
 nnoremap <leader>gg :CtrlPBufTag<CR>
 nnoremap <leader>G :CtrlPBufTagAll<CR>
 nnoremap <leader>F :CtrlPLine<CR>
@@ -127,3 +126,6 @@ inoremap <C-c> <Esc>
 " custom commands
 map <leader>r :call custom_command#run()<cr>
 map <leader>sc :call custom_command#set()<cr>
+
+" http://statico.github.io/vim.html
+nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>

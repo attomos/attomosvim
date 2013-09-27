@@ -51,7 +51,6 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'Lokaltog/powerline'
-Bundle 'bling/vim-airline'
 "Bundle 'Valloric/MatchTagAlways'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
