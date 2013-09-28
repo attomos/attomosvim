@@ -110,8 +110,8 @@ set pastetoggle=<F2>
 " gem install bluecloth
 map <silent> \p :Preview<CR>
 
-" Firefox, of course :)
-nmap <leader>p :!open -a Firefox %<CR><CR>
+" Open default browser, Chrome in this case
+nmap <leader>p :!open -a Google\ Chrome %<CR><CR>
 
 " TagBar
 nnoremap <silent> <leader>tt :TagbarToggle<CR>
