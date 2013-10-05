@@ -21,3 +21,4 @@ else
         \ 'fallback': 'find %s -type f'
     \ }
 endif
+let g:ctrlp_extensions = ['funky']

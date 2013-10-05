@@ -18,6 +18,9 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 cmap cwd lcd %:p:h
 cmap cd. lcd %:p:h
 
+noremap <leader>y "*y
+noremap <leader>Y "*Y
+
 " http://stackoverflow.com/a/726920/606355
 cmap w!! w !sudo tee % >/dev/null
 
@@ -44,7 +47,7 @@ map zl zL
 map zh zH
 
 " NERDTree
-map <leader>nt :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <leader>E :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 " Code folding options
@@ -93,11 +96,11 @@ nnoremap <Leader>fu :CtrlPFunky<CR>
 vnoremap . :normal .<CR>
 
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+"nmap <C-Up> [e
+"nmap <C-Down> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+"vmap <C-Up> [egv
+"vmap <C-Down> ]egv
 
 " Gundo
 nmap <F5> :GundoToggle<CR>
@@ -129,3 +132,11 @@ map <leader>sc :call custom_command#set()<cr>
 
 " http://statico.github.io/vim.html
 nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>
+
+" Custom command for run system command silently and redraw the editing buffer
+" http://vim.wikia.com/wiki/Avoiding_the_%22Hit_ENTER_to_continue%22_prompts
+command! -nargs=1 Silent
+\ | execute ':silent !'.<q-args>
+\ | execute ':redraw!'
+
+map <leader>sl :Silent 

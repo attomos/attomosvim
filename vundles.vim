@@ -36,6 +36,8 @@ Bundle 'briancollins/vim-jst'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'moll/vim-node'
 Bundle 'digitaltoad/vim-jade'
+" Go lang
+Bundle 'jnwhiteh/vim-golang'
 " HTML
 Bundle 'matchit.zip'
 Bundle 'othree/html5.vim'
@@ -46,11 +48,12 @@ Bundle 'Puppet-Syntax-Highlighting'
 " Python
 Bundle 'vim-scripts/python_match.vim'
 Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'jmcantrell/vim-virtualenv'
 " YAML
 Bundle 'avakhov/vim-yaml'
 
 " Utilities
-Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
 "Bundle 'Valloric/MatchTagAlways'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
@@ -60,6 +63,7 @@ Bundle 'vim-scripts/restore_view.vim'
 Bundle 'vim-scripts/LanguageTool'
 Bundle 'Shougo/unite.vim'
 Bundle 'mattn/webapi-vim'
+Bundle 'guns/xterm-color-table.vim'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
