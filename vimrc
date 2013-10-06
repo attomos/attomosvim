@@ -83,6 +83,8 @@ set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)  " A ruler on steroids
 autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 
 set winminheight=0                                  " Windows height only 0
+set nolist                                          " No list characters by default
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.,eol:¬  " Highlight problematic whitespace
 " }}}
 
 " source them {{{
