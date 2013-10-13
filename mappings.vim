@@ -140,3 +140,5 @@ command! -nargs=1 Silent
 \ | execute ':redraw!'
 
 map <leader>sl :Silent 
+
+nnoremap <leader>ig :IndentGuidesToggle<CR>

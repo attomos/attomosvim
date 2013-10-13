@@ -64,6 +64,8 @@ Bundle 'vim-scripts/LanguageTool'
 Bundle 'Shougo/unite.vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'guns/xterm-color-table.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Valloric/MatchTagAlways'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
