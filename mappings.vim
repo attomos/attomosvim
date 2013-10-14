@@ -141,4 +141,4 @@ command! -nargs=1 Silent
 
 map <leader>sl :Silent 
 
-nnoremap <leader>ig :IndentGuidesToggle<CR>
+nnoremap <silent> <leader>ig :IndentGuidesToggle<CR>
