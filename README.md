@@ -6,11 +6,6 @@ OSX 10.8.4 and Ubuntu Precise on my Vagrant environment.
 Inspired by [spf13-vim](https://github.com/dtinth/.vimrc), [dtinth's
 .vimrc](https://github.com/dtinth/.vimrc) and [fisa-vim-config](https://github.com/fisadev/fisa-vim-config)
 
-# Try it (This won't harm your old vimrc)
-
-    git clone git@github.com:attomos/attomosvim.git ~/.attomosvim
-    vim -u ~/.attomosvim/vimrc
-
 # Installation
 
 ## Automatic way (\*nix only)
