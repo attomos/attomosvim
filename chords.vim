@@ -1,9 +1,10 @@
 " From http://github.com/dtinth/.vimrc
 " chord files for vim-arpeggio
 
-function! Chords#general()
+function! chords#general()
   Arpeggio inoremap {} {<CR>}<Esc>O
   Arpeggio inoremap () ()<Left>
+  Arpeggio inoremap [] []<Left>
   Arpeggio inoremap ret return<Space>
   Arpeggio inoremap sd <C-w>
   Arpeggio inoremap kl <C-w>
@@ -12,11 +13,19 @@ function! Chords#general()
   Arpeggio nnoremap askl :Silent clear<CR>
 endfunction
 
-function! Chords#python()
+function! chords#python()
   Arpeggio inoremap awd def ():<Left><Left><Left>
 endfunction
 
-function! Chords#javascript()
+function! chords#ruby()
+  Arpeggio inoremap awd def<CR>end<Up><Space>
+  Arpeggio inoremap cla class<CR>end<Up><Right><Right><Space>
+  Arpeggio inoremap con puts<Space>
+  Arpeggio inoremap inc include<Space>
+  Arpeggio inoremap mod module<CR>end<Up><Right><Right><Right><Space>
+endfunction
+
+function! chords#javascript()
   Arpeggio inoremap awd var<Space>
   Arpeggio inoremap awf arguments
   Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O<Tab>
@@ -38,7 +47,8 @@ function! Chords#javascript()
   Arpeggio inoremap FUN Function
 endfunction
 
-autocmd VimEnter * call Chords#general()
-autocmd BufRead,BufNewFile *.py call Chords#python()
-autocmd BufRead,BufNewFile *.js call Chords#javascript()
+autocmd VimEnter * call chords#general()
+autocmd BufRead,BufNewFile *.py call chords#python()
+autocmd BufRead,BufNewFile *.coffee,*.js call chords#javascript()
+autocmd BufRead,BufNewFile *.rb call chords#ruby()
 let g:arpeggio_timeoutlen=30

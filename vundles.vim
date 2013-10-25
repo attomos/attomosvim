@@ -49,6 +49,8 @@ Bundle 'Puppet-Syntax-Highlighting'
 Bundle 'vim-scripts/python_match.vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jmcantrell/vim-virtualenv'
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
 " YAML
 Bundle 'avakhov/vim-yaml'
 
@@ -66,6 +68,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'mileszs/ack.vim'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
@@ -73,3 +76,4 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'dtinth/vim-colors-dtinth256'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'jpo/vim-railscasts-theme'

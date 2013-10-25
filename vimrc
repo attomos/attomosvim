@@ -109,3 +109,6 @@ set term=screen-256color
 " For AngularJS especially
 let g:syntastic_html_checkers=[]
 " }}}
+
+" A must
+let g:syntastic_always_populate_loc_list = 1
