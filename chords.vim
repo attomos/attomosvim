@@ -23,6 +23,7 @@ function! chords#ruby()
   Arpeggio inoremap con puts<Space>
   Arpeggio inoremap inc include<Space>
   Arpeggio inoremap mod module<CR>end<Up><Right><Right><Right><Space>
+  Arpeggio inoremap req require<Space>
 endfunction
 
 function! chords#javascript()
@@ -48,7 +49,7 @@ function! chords#javascript()
 endfunction
 
 autocmd VimEnter * call chords#general()
-autocmd BufRead,BufNewFile *.py call chords#python()
-autocmd BufRead,BufNewFile *.coffee,*.js call chords#javascript()
-autocmd BufRead,BufNewFile *.rb call chords#ruby()
+autocmd FileType python call chords#python()
+autocmd FileType coffee,javascript,jst,html call chords#javascript()
+autocmd FileType ruby call chords#ruby()
 let g:arpeggio_timeoutlen=30

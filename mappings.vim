@@ -139,6 +139,10 @@ command! -nargs=1 Silent
 \ | execute ':silent !'.<q-args>
 \ | execute ':redraw!'
 
-map <leader>sl :Silent 
+map <leader>sl :Silent<Space>
 
 nnoremap <silent> <leader>ig :IndentGuidesToggle<CR>
+
+" Map <Leader>ff to display all lines with keyword under cursor
+" and ask which one to jump to
+nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
