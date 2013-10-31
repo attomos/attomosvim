@@ -14,11 +14,11 @@ function! chords#general()
 endfunction
 
 function! chords#python()
-  Arpeggio inoremap awd def ():<Left><Left><Left>
+  Arpeggio inoremap fun def ():<Left><Left><Left>
 endfunction
 
 function! chords#ruby()
-  Arpeggio inoremap awd def<CR>end<Up><Space>
+  Arpeggio inoremap fun def<CR>end<Up><Space>
   Arpeggio inoremap cla class<CR>end<Up><Right><Right><Space>
   Arpeggio inoremap con puts<Space>
   Arpeggio inoremap inc include<Space>
