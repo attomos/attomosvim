@@ -1,6 +1,5 @@
 # attomos's Vim configurations
-If you think this is good for you, use it, hack it and share it. These
-configurations have been used with [Vim](http://www.vim.org) 7.4 on my MacBook
+These configurations have been used with [Vim](http://www.vim.org) 7.4 on my MacBook
 OSX 10.8.4 and Ubuntu Precise on my Vagrant environment.
 
 Inspired by [spf13-vim](https://github.com/dtinth/.vimrc), [dtinth's

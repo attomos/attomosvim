@@ -10,7 +10,7 @@ function! chords#general()
   Arpeggio inoremap kl <C-w>
   Arpeggio nnoremap jkl ciw
   Arpeggio nnoremap sdf :set paste!<CR>
-  Arpeggio nnoremap askl :Silent clear<CR>
+  Arpeggio nnoremap kl :Silent clear<CR>
 endfunction
 
 function! chords#python()
