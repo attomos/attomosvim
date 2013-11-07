@@ -9,3 +9,5 @@ hi SpellBad cterm=underline
 hi SpellCap cterm=underline
 hi SpellLocal cterm=underline
 hi SpellRare cterm=underline
+
+hi Visual guifg=none guibg=#FFDB9D guisp=#3c414c gui=NONE ctermfg=none ctermbg=222 cterm=NONE
