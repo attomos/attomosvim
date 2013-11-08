@@ -24,6 +24,8 @@ function! chords#ruby()
   Arpeggio inoremap inc include<Space>
   Arpeggio inoremap mod module<CR>end<Up><Right><Right><Right><Space>
   Arpeggio inoremap req require<Space>
+  Arpeggio inoremap asd describe<Space>""<Space>do<CR>end<Up><Right><Right><Right><Right><Right><Right><Right>
+  Arpeggio inoremap it it "" do<CR>end<Up><Right>
 endfunction
 
 function! chords#javascript()
