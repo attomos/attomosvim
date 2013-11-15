@@ -6,8 +6,6 @@ function! chords#general()
   Arpeggio inoremap () ()<Left>
   Arpeggio inoremap [] []<Left>
   Arpeggio inoremap ret return<Space>
-  Arpeggio inoremap sd <C-w>
-  Arpeggio inoremap kl <C-w>
   Arpeggio nnoremap jkl ciw
   Arpeggio nnoremap sdf :set paste!<CR>
   Arpeggio nnoremap kl :Silent clear<CR>
@@ -24,8 +22,7 @@ function! chords#ruby()
   Arpeggio inoremap inc include<Space>
   Arpeggio inoremap mod module<CR>end<Up><Right><Right><Right><Space>
   Arpeggio inoremap req require<Space>
-  Arpeggio inoremap asd describe<Space>""<Space>do<CR>end<Up><Right><Right><Right><Right><Right><Right><Right>
-  Arpeggio inoremap it it "" do<CR>end<Up><Right>
+  Arpeggio inoremap daw describe<Space>""<Space>do<CR>end<Up><Right><Right><Right><Right><Right><Right><Right>
 endfunction
 
 function! chords#javascript()
@@ -54,4 +51,4 @@ autocmd VimEnter * call chords#general()
 autocmd FileType python call chords#python()
 autocmd FileType coffee,javascript,jst,html call chords#javascript()
 autocmd FileType ruby call chords#ruby()
-let g:arpeggio_timeoutlen=30
+let g:arpeggio_timeoutlen=25
