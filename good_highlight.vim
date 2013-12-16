@@ -1,6 +1,6 @@
-" Spell checking and proper highlighting, British English
+" Spell checking and proper highlighting, US English
 set spell
-set spelllang=en_gb
+set spelllang=en_us
 hi clear SpellBad
 hi clear SpellCap
 hi clear SpellLocal

@@ -146,3 +146,5 @@ nnoremap <silent> <leader>ig :IndentGuidesToggle<CR>
 " Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
 nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+
+nnoremap \et :set expandtab!<CR>:set expandtab?<CR>
