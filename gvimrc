@@ -8,6 +8,7 @@ if has("gui_running")
   "set lines=999 columns=999
   " But I don't do that.
   set lines=25 columns=80
+  "set noea " no equalalways
 else
   " This is console Vim.
   if exists("+lines")
