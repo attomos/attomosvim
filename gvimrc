@@ -1,5 +1,4 @@
-"set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
-set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
 " tab navigation like firefox
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
