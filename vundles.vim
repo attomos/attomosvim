@@ -53,6 +53,8 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jmcantrell/vim-virtualenv'
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
+" Slim
+Bundle 'slim-template/vim-slim'
 " YAML
 Bundle 'avakhov/vim-yaml'
 

@@ -148,3 +148,7 @@ nnoremap <silent> <leader>ig :IndentGuidesToggle<CR>
 nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 nnoremap \et :set expandtab!<CR>:set expandtab?<CR>
+
+"let g:seek_subst_disable = 1
+let g:SeekKey = '<Space>'
+let g:SeekBackKey = '<S-Space>'
