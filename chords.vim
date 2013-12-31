@@ -28,7 +28,7 @@ endfunction
 function! chords#javascript()
   Arpeggio inoremap awd var<Space>
   Arpeggio inoremap awf arguments
-  Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O<Tab>
+  Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O
   Arpeggio inoremap rea fs.readFile
   Arpeggio inoremap jsp JSON.parse
   Arpeggio inoremap jst JSON.stringify
@@ -47,8 +47,15 @@ function! chords#javascript()
   Arpeggio inoremap FUN Function
 endfunction
 
+function! chords#java()
+  Arpeggio inoremap con System.out.println();<Left><Left>
+  Arpeggio inoremap cla class <Space>{<Cr>}<Up><Right><Right><Right><Right><Right>
+  Arpeggio inoremap mia public static void main(String[] args) {<Cr>}<Esc>O
+endfunction
+
 autocmd VimEnter * call chords#general()
 autocmd FileType python call chords#python()
 autocmd FileType coffee,javascript,jst,html call chords#javascript()
+autocmd FileType java call chords#java()
 autocmd FileType ruby call chords#ruby()
 let g:arpeggio_timeoutlen=25
