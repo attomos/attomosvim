@@ -18,8 +18,8 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 cmap cwd lcd %:p:h
 cmap cd. lcd %:p:h
 
-noremap <leader>y "*y
-noremap <leader>Y "*Y
+noremap <Leader>y "*y
+noremap <Leader>Y "*Y
 
 " http://stackoverflow.com/a/726920/606355
 cmap w!! w !sudo tee % >/dev/null
@@ -37,58 +37,58 @@ map <S-L> gt
 " Some helpers to edit mode
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
+map <Leader>ew :e %%
+map <Leader>es :sp %%
+map <Leader>ev :vsp %%
+map <Leader>et :tabe %%
 
 " Easier horizontal scrolling
 map zl zL
 map zh zH
 
 " NERDTree
-map <leader>E :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <Leader>E :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 " Code folding options
-nmap <leader>f0 :set foldlevel=0<CR>
-nmap <leader>f1 :set foldlevel=1<CR>
-nmap <leader>f2 :set foldlevel=2<CR>
-nmap <leader>f3 :set foldlevel=3<CR>
-nmap <leader>f4 :set foldlevel=4<CR>
-nmap <leader>f5 :set foldlevel=5<CR>
-nmap <leader>f6 :set foldlevel=6<CR>
-nmap <leader>f7 :set foldlevel=7<CR>
-nmap <leader>f8 :set foldlevel=8<CR>
-nmap <leader>f9 :set foldlevel=9<CR>
+nmap <Leader>f0 :set foldlevel=0<CR>
+nmap <Leader>f1 :set foldlevel=1<CR>
+nmap <Leader>f2 :set foldlevel=2<CR>
+nmap <Leader>f3 :set foldlevel=3<CR>
+nmap <Leader>f4 :set foldlevel=4<CR>
+nmap <Leader>f5 :set foldlevel=5<CR>
+nmap <Leader>f6 :set foldlevel=6<CR>
+nmap <Leader>f7 :set foldlevel=7<CR>
+nmap <Leader>f8 :set foldlevel=8<CR>
+nmap <Leader>f9 :set foldlevel=9<CR>
 
 " Find merge conflict markers
-map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
+map <Leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 
 " Visual shifting (does not exit Visual mode)
 vnoremap < <gv
 vnoremap > >gv
 
 " Fugitive
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gp :Git push<CR>
+nnoremap <silent> <Leader>gs :Gstatus<CR>
+nnoremap <silent> <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gc :Gcommit<CR>
+nnoremap <silent> <Leader>gb :Gblame<CR>
+nnoremap <silent> <Leader>gl :Glog<CR>
+nnoremap <silent> <Leader>gp :Git push<CR>
 
 " Toggle list characters
-map <leader>l :set list!<CR>
+map <Leader>l :set list!<CR>
 
 " Toggle spelling
-nmap <leader>ss :set spell!<CR>
+nmap <Leader>ss :set spell!<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
 " Adapted some to make me comfy
-nnoremap <leader>gg :CtrlPBufTag<CR>
-nnoremap <leader>G :CtrlPBufTagAll<CR>
-nnoremap <leader>F :CtrlPLine<CR>
-nnoremap <leader>m :CtrlPMRUFiles<CR>
+nnoremap <Leader>gg :CtrlPBufTag<CR>
+nnoremap <Leader>G :CtrlPBufTagAll<CR>
+nnoremap <Leader>F :CtrlPLine<CR>
+nnoremap <Leader>m :CtrlPMRUFiles<CR>
 nnoremap <Leader>fu :CtrlPFunky<CR>
 
 " Allow using the repeat operator with a visual selection (!)
@@ -114,21 +114,21 @@ set pastetoggle=<F2>
 map <silent> \p :Preview<CR>
 
 " Open default browser, Chrome in this case
-nmap <leader>p :!open -a Google\ Chrome %<CR><CR>
+nmap <Leader>p :!open -a Google\ Chrome %<CR><CR>
 
 " TagBar
-nnoremap <silent> <leader>tt :TagbarToggle<CR>
+nnoremap <silent> <Leader>tt :TagbarToggle<CR>
 
 " Tabman
-let g:tabman_toggle = '<leader>tm'
+let g:tabman_toggle = '<Leader>tm'
 
 " https://vimeo.com/67215271
 " now <C-c> won't break the autoclose parentheses
 inoremap <C-c> <Esc>
 
-" custom commands
-map <leader>r :call custom_command#run()<cr>
-map <leader>sc :call custom_command#set()<cr>
+" custom command
+map <Leader>r :call custom_command#run()<cr>
+map <Leader>sc :call custom_command#set()<cr>
 
 " http://statico.github.io/vim.html
 nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>
@@ -139,9 +139,9 @@ command! -nargs=1 Silent
 \ | execute ':silent !'.<q-args>
 \ | execute ':redraw!'
 
-map <leader>sl :Silent<Space>
+map <Leader>sl :Silent<Space>
 
-nnoremap <silent> <leader>ig :IndentGuidesToggle<CR>
+nnoremap <silent> <Leader>ig :IndentGuidesToggle<CR>
 
 " Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
@@ -164,3 +164,11 @@ map <Leader>A :call RunAllSpecs()<CR>
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <C-c><C-c> <Plug>NormalModeSendToTmux
 nmap <C-c>r <Plug>SetTmuxVars
+
+" Send to tmux
+" Send custom command to tmux
+map <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
+" Send `clear` to tmux
+map <Leader>kl :call Send_to_Tmux("clear\n")<CR>
+" Send  to tmux
+map <Leader>C :call Send_to_Tmux("\u0003")<CR>
