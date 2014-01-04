@@ -161,14 +161,14 @@ map <Leader>S :call RunNearestSpec()<CR>
 map <Leader>L :call RunLastSpec()<CR>
 map <Leader>A :call RunAllSpecs()<CR>
 
-vmap <C-c><C-c> <Plug>SendSelectionToTmux
-nmap <C-c><C-c> <Plug>NormalModeSendToTmux
-nmap <C-c>r <Plug>SetTmuxVars
+vmap <C-t><C-t> <Plug>SendSelectionToTmux
+nmap <C-t><C-t> <Plug>NormalModeSendToTmux
+nmap <C-t>r <Plug>SetTmuxVars
 
 " Send to tmux
 " Send custom command to tmux
 map <silent> <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
 " Send `clear` to tmux
-map <silent> <Leader>kl :call Send_to_Tmux("clear\n")<CR>
+map <silent> <Leader>K :call Send_to_Tmux("clear\n")<CR>
 " Send  to tmux
 map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
