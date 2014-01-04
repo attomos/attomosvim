@@ -150,5 +150,17 @@ nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<C
 nnoremap \et :set expandtab!<CR>:set expandtab?<CR>
 
 "let g:seek_subst_disable = 1
-let g:SeekKey = '<Space>'
-let g:SeekBackKey = '<S-Space>'
+"let g:SeekKey = '<Space>'
+"let g:SeekBackKey = '<S-Space>'
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+" vim-rpec mappings
+map <Leader>T :call RunCurrentSpecFile()<CR>
+map <Leader>S :call RunNearestSpec()<CR>
+map <Leader>L :call RunLastSpec()<CR>
+map <Leader>A :call RunAllSpecs()<CR>
+
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars

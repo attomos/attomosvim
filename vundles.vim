@@ -58,7 +58,6 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'bling/vim-airline'
-"Bundle 'Valloric/MatchTagAlways'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
 Bundle 'greyblake/vim-preview'
@@ -71,6 +70,8 @@ Bundle 'guns/xterm-color-table.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'mileszs/ack.vim'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'jgdavey/tslime.vim'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
