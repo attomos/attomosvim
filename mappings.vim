@@ -167,8 +167,8 @@ nmap <C-c>r <Plug>SetTmuxVars
 
 " Send to tmux
 " Send custom command to tmux
-map <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
+map <silent> <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
 " Send `clear` to tmux
-map <Leader>kl :call Send_to_Tmux("clear\n")<CR>
+map <silent> <Leader>kl :call Send_to_Tmux("clear\n")<CR>
 " Send  to tmux
-map <Leader>C :call Send_to_Tmux("\u0003")<CR>
+map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
