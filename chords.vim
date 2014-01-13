@@ -9,6 +9,10 @@ function! chords#general()
   Arpeggio nnoremap jkl ciw
   Arpeggio nnoremap sdf :set paste!<CR>
   Arpeggio nnoremap kl :Silent clear<CR>
+  Arpeggio nnoremap a; :w<CR>
+  Arpeggio nnoremap zp ZZ
+  Arpeggio nnoremap qp ZQ
+  Arpeggio nnoremap f; A;
 endfunction
 
 function! chords#python()

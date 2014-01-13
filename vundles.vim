@@ -28,6 +28,7 @@ Bundle 'mhinz/vim-signify'
 " For each file type
 " CSS related
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'wavded/vim-stylus'
 " CSV
 Bundle 'chrisbra/csv.vim'
 " JS related
@@ -38,9 +39,11 @@ Bundle 'moll/vim-node'
 Bundle 'digitaltoad/vim-jade'
 " Go lang
 Bundle 'jnwhiteh/vim-golang'
-" HTML
+" HTML and friends
 Bundle 'matchit.zip'
 Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-haml'
+Bundle 'slim-template/vim-slim'
 " Markdown
 Bundle 'tpope/vim-markdown'
 " Puppet
@@ -51,8 +54,6 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jmcantrell/vim-virtualenv'
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
-" Slim
-Bundle 'slim-template/vim-slim'
 " YAML
 Bundle 'avakhov/vim-yaml'
 
