@@ -172,3 +172,6 @@ map <silent> <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command
 map <silent> <Leader>K :call Send_to_Tmux("clear\n")<CR>
 " Send  to tmux
 map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
+
+" Stripe whitespace
+nmap <silent> <Leader>st :call StripTrailingWhitespace()<CR>
