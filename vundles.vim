@@ -29,6 +29,7 @@ Bundle 'mhinz/vim-signify'
 " CSS related
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'wavded/vim-stylus'
+Bundle 'groenewege/vim-less'
 " CSV
 Bundle 'chrisbra/csv.vim'
 " JS related
