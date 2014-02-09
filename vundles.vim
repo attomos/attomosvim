@@ -71,7 +71,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Valloric/MatchTagAlways'
-Bundle 'mileszs/ack.vim'
+Bundle 'epmatsw/ag.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 
