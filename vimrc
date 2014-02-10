@@ -119,8 +119,7 @@ exec "source " . s:dirname . "/mappings.vim"
 
 " Fixed tmux messed up with some colorschemes
 set term=screen-256color
-" For AngularJS especially
-let g:syntastic_ruby_checkers=['rubocop', 'mri']
+let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
 
 " A must

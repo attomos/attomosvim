@@ -15,6 +15,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'kana/vim-arpeggio'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Hold on!
 "Bundle 'vim-scripts/PreserveNoEOL'

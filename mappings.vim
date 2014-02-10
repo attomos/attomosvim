@@ -175,3 +175,14 @@ map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
 
 " Stripe whitespace
 nmap <silent> <Leader>st :call StripTrailingWhitespace()<CR>
+
+function ToggleRubyChecker()
+  if g:syntastic_ruby_checkers == ['mri']
+    let g:syntastic_ruby_checkers=['rubocop']
+  else
+    let g:syntastic_ruby_checkers=['mri']
+  end
+  echo g:syntastic_ruby_checkers[0]
+endfunction
+
+nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
