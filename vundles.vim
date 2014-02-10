@@ -76,6 +76,7 @@ Bundle 'Valloric/MatchTagAlways'
 Bundle 'epmatsw/ag.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
+Bundle 'osyo-manga/vim-anzu'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
