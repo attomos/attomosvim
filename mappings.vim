@@ -18,8 +18,12 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 cmap cwd lcd %:p:h
 cmap cd. lcd %:p:h
 
+" Copy selection to clipboard
 noremap <Leader>y "*y
+" Copy line to clipboard
 noremap <Leader>Y "*Y
+" Like mark-whole-buffer in Emacs
+nnoremap <C-h> GVgg
 
 " http://stackoverflow.com/a/726920/606355
 cmap w!! w !sudo tee % >/dev/null
