@@ -22,8 +22,6 @@ cmap cd. lcd %:p:h
 noremap <Leader>y "*y
 " Copy line to clipboard
 noremap <Leader>Y "*Y
-" Like mark-whole-buffer in Emacs
-nnoremap <C-h> GVgg
 
 " http://stackoverflow.com/a/726920/606355
 cmap w!! w !sudo tee % >/dev/null
@@ -193,3 +191,6 @@ nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
 
 "nnoremap <Leader>a <Space><Space>F
 "nnoremap <Leader>; <Space><Space>f
+
+" Like mark-whole-buffer in Emacs
+nnoremap <C-h> GVgg
