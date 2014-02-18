@@ -191,6 +191,3 @@ nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
 
 "nnoremap <Leader>a <Space><Space>F
 "nnoremap <Leader>; <Space><Space>f
-
-" Like mark-whole-buffer in Emacs
-nnoremap <C-h> GVgg
