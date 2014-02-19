@@ -122,6 +122,8 @@ set term=screen-256color
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
 let NERDSpaceDelims=1
+let g:sneak#streak = 1
+
 " A must
 let g:syntastic_always_populate_loc_list = 1
 let g:mta_filetypes = {

@@ -7,12 +7,12 @@ function! chords#general()
   Arpeggio inoremap [] []<Left>
   Arpeggio inoremap ret return<Space>
   Arpeggio nnoremap jkl ciw
-  Arpeggio nnoremap sdf :set paste!<CR>
+  " Arpeggio nnoremap sdf :set paste!<CR>
   Arpeggio nnoremap kl :Silent clear<CR>
-  Arpeggio nnoremap a; :w<CR>
+  " Arpeggio nnoremap a; :w<CR>
   Arpeggio nnoremap zp ZZ
   Arpeggio nnoremap qp ZQ
-  Arpeggio nnoremap f; A;
+  " Arpeggio nnoremap f; A;
 endfunction
 
 function! chords#python()
@@ -32,7 +32,7 @@ endfunction
 function! chords#javascript()
   Arpeggio inoremap awd var<Space>
   Arpeggio inoremap awf arguments
-  Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O
+  " Arpeggio inoremap ;f ;(function() {<Cr>})()<Esc>O
   Arpeggio inoremap rea fs.readFile
   Arpeggio inoremap jsp JSON.parse
   Arpeggio inoremap jst JSON.stringify

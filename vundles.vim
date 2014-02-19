@@ -3,6 +3,7 @@ Bundle 'gmarik/vundle'
 
 " General Programming
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'justinmk/vim-sneak'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
