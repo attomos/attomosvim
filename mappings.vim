@@ -189,5 +189,10 @@ endfunction
 
 nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
 
-"nnoremap <Leader>a <Space><Space>F
-"nnoremap <Leader>; <Space><Space>f
+" From http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
+nnoremap Q :normal n.<CR>
+
+" From http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/
+nnoremap <silent> <Plug>TransposeCharacters xp
+\:call repeat#set("\<Plug>TransposeCharacters")<CR>
+nmap cp <Plug>TransposeCharacters
