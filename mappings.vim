@@ -178,7 +178,7 @@ map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
 " Stripe whitespace
 nmap <silent> <Leader>st :call StripTrailingWhitespace()<CR>
 
-function ToggleRubyChecker()
+function! ToggleRubyChecker()
   if g:syntastic_ruby_checkers == ['mri']
     let g:syntastic_ruby_checkers=['rubocop']
   else
@@ -196,3 +196,5 @@ nnoremap Q :normal n.<CR>
 nnoremap <silent> <Plug>TransposeCharacters xp
 \:call repeat#set("\<Plug>TransposeCharacters")<CR>
 nmap cp <Plug>TransposeCharacters
+
+nnoremap <Leader>D :Dash<CR>
