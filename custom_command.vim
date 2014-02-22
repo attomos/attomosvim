@@ -1,6 +1,16 @@
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={{{,}}} foldlevel=0 foldmethod=marker spell:
 " From http://github.com/dtinth/.vimrc
 " Very useful
 let g:custom_command = ''
+
+" {{{ Default custom commands
+autocmd FileType c let g:custom_command = 'gcc % ; ./a.out'
+autocmd FileType cpp let g:custom_command = 'g++ % ; ./a.out'
+autocmd FileType java let g:custom_command = 'javac % ; java %:r'
+autocmd FileType python let g:custom_command = 'python %'
+autocmd FileType ruby let g:custom_command = 'ruby %'
+" }}}
+
 let g:silent_custom_command = 0
 function! custom_command#run()
  if g:custom_command == ''
@@ -15,6 +25,9 @@ function! custom_command#run()
 endfunction
 
 function! custom_command#set()
-  let g:custom_command = input('Enter Custom Command$ ')
+  let new_command = input('Enter Custom Command$ current is`' . g:custom_command . '`')
+  if new_command != ""
+    let g:custom_command = new_command
+  end
 endfunction
 
