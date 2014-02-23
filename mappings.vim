@@ -83,7 +83,7 @@ nnoremap <silent> <Leader>gp :Git push<CR>
 map <Leader>l :set list!<CR>
 
 " Toggle spelling
-nmap <Leader>ss :set spell!<CR>
+nmap <Leader>ss :set spell!<CR>:set spell?<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
 " Adapted some to make me comfy
