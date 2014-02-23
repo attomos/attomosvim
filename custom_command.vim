@@ -4,11 +4,11 @@
 let g:custom_command = ''
 
 " {{{ Default custom commands
-autocmd FileType c let g:custom_command = 'gcc % ; ./a.out'
-autocmd FileType cpp let g:custom_command = 'g++ % ; ./a.out'
-autocmd FileType java let g:custom_command = 'javac % ; java %:r'
-autocmd FileType python let g:custom_command = 'python %'
-autocmd FileType ruby let g:custom_command = 'ruby %'
+autocmd BufRead,BufNewFile,FileType c let g:custom_command = 'gcc % -o %:r.out ; ./%:r.out'
+autocmd BufRead,BufNewFile,FileType cpp let g:custom_command = 'g++ % -o %:r.out ; ./%:r.out'
+autocmd BufRead,BufNewFile,FileType java let g:custom_command = 'javac % ; java %:r'
+autocmd BufRead,BufNewFile,FileType python let g:custom_command = 'python %'
+autocmd BufRead,BufNewFile,FileType ruby let g:custom_command = 'ruby %'
 " }}}
 
 let g:silent_custom_command = 0

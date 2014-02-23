@@ -169,6 +169,7 @@ nmap <C-t>r <Plug>SetTmuxVars
 
 " Send to tmux
 " Send custom command to tmux
+" FIXME: Better write function to get the proper path
 map <silent> <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
 " Send `clear` to tmux
 map <silent> <Leader>K :call Send_to_Tmux("clear\n")<CR>
