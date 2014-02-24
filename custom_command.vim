@@ -2,6 +2,7 @@
 " From http://github.com/dtinth/.vimrc
 " Very useful
 let g:custom_command = ''
+let g:_custom_command = ''
 
 " {{{ Default custom commands
 autocmd BufRead,BufNewFile,BufEnter *.c let g:_custom_command = 'gcc % -o %:r.out ; ./%:r.out'
@@ -21,12 +22,17 @@ function! custom_command#run()
 endfunction
 
 function! custom_command#set()
-  if !empty(g:_custom_command)
-    let l:new_command = input('Enter Custom Command$ ', g:_custom_command)
-  else
+  if !empty(g:custom_command) " Always suggest default custom command
     let l:new_command = input('Enter Custom Command$ ', g:custom_command)
+  else
+    let l:new_command = input('Enter Custom Command$ ', g:_custom_command)
   endif
   if l:new_command != ""
     let g:custom_command = l:new_command
   end
+endfunction
+
+function! custom_command#reset()
+  let g:custom_command = ''
+  echo 'g:custom_command is now empty'
 endfunction

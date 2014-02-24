@@ -131,6 +131,7 @@ inoremap <C-c> <Esc>
 " custom command
 map <Leader>r :call custom_command#run()<cr>
 map <Leader>sc :call custom_command#set()<cr>
+map <silent> <Leader>sr  :call custom_command#reset()<cr>
 
 " http://statico.github.io/vim.html
 nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>
@@ -198,4 +199,4 @@ nnoremap <silent> <Plug>TransposeCharacters xp
 \:call repeat#set("\<Plug>TransposeCharacters")<CR>
 nmap cp <Plug>TransposeCharacters
 
-nnoremap <Leader>D :Dash<CR>
+nnoremap <Leader>D :Dash!<CR>
