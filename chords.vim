@@ -13,6 +13,7 @@ function! chords#general()
   Arpeggio nnoremap zp ZZ
   Arpeggio nnoremap qp ZQ
   " Arpeggio nnoremap f; A;
+  Arpeggio cnoremap sdf \<\><Left><Left>
 endfunction
 
 function! chords#python()
