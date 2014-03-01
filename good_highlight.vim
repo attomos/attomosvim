@@ -9,3 +9,4 @@ hi SpellBad cterm=underline gui=underline
 hi SpellCap cterm=underline gui=underline
 hi SpellLocal cterm=underline gui=underline
 hi SpellRare cterm=underline gui=underline
+hi Search ctermfg=red ctermbg=235 gui=underline guifg=#ffffff guibg=#282828
