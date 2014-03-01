@@ -126,11 +126,3 @@ let g:sneak#streak = 1
 
 " A must
 let g:syntastic_always_populate_loc_list = 1
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'eruby' : 1,
-    \ 'jinja' : 1,
-    \ 'jsp' : 1,
-    \}
