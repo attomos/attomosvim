@@ -9,7 +9,7 @@ hi SpellBad cterm=underline gui=underline
 hi SpellCap cterm=underline gui=underline
 hi SpellLocal cterm=underline gui=underline
 hi SpellRare cterm=underline gui=underline
-hi Search ctermfg=15 ctermbg=202 gui=underline guifg=#ffffff guibg=#282828
+hi Search term=none cterm=none ctermfg=8 ctermbg=93 guifg=#ffffff guibg=#282828
 
 " syn match   myTodo   "\<\(TODO\|FIXME\|XXX\|NOTE\|HACK\|REVIEW\|OPTIMIZE\)\>"
 " hi def link myTodo Todo
