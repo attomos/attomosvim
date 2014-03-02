@@ -14,6 +14,7 @@ function! chords#general()
   Arpeggio nnoremap qp ZQ
   " Arpeggio nnoremap f; A;
   Arpeggio cnoremap sdf \<\><Left><Left>
+  Arpeggio nnoremap wer :YcmRestartServer<CR>
 endfunction
 
 function! chords#python()
