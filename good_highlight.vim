@@ -20,7 +20,7 @@ hi Todo term=bold cterm=bold ctermfg=154 guifg=#87e087 ctermbg=none guibg=none
 " MatchTagAlways
 let g:mta_use_matchparen_group = 0
 let g:mta_set_default_matching_color = 0
-highlight MatchTag ctermfg=black ctermbg=229 guifg=black guibg=lightgreen
+highlight MatchTag ctermfg=black ctermbg=228 guifg=black guibg=lightgreen
 let g:mta_filetypes = {
     \ 'html' : 1,
     \ 'xhtml' : 1,
