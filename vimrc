@@ -126,3 +126,4 @@ let g:sneak#streak = 1
 
 " A must
 let g:syntastic_always_populate_loc_list = 1
+nnoremap <F1> <NOP>
