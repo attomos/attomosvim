@@ -5,9 +5,9 @@ let g:custom_command = ''
 let g:_custom_command = ''
 
 " {{{ Default custom commands
-autocmd BufRead,BufNewFile,BufEnter *.c let g:_custom_command = 'gcc % -o %:r.out ; ./%:r.out'
-autocmd BufRead,BufNewFile,BufEnter *.cpp,*.cc let g:_custom_command = 'g++ % -o %:r.out ; ./%:r.out'
-autocmd BufRead,BufNewFile,BufEnter *.java let g:_custom_command = 'javac % ; java %:r'
+autocmd BufRead,BufNewFile,BufEnter *.c let g:_custom_command = 'gcc % -o %:r.out && ./%:r.out'
+autocmd BufRead,BufNewFile,BufEnter *.cpp,*.cc let g:_custom_command = 'g++ % -o %:r.out && ./%:r.out'
+autocmd BufRead,BufNewFile,BufEnter *.java let g:_custom_command = 'javac % && java %:r'
 autocmd BufRead,BufNewFile,BufEnter *.js let g:_custom_command = 'node %'
 autocmd BufRead,BufNewFile,BufEnter *.py let g:_custom_command = 'python %'
 autocmd BufRead,BufNewFile,BufEnter *.rb let g:_custom_command = 'ruby %'
