@@ -111,12 +111,9 @@ nmap <F5> :GundoToggle<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
-" For preview markdown and friends
-" gem install bluecloth
-map <silent> \p :Preview<CR>
-
-" Open default browser, Chrome in this case
+" Preview current buffer either Chrome or Mou (Markdown editor)
 nmap <Leader>p :!open -a Google\ Chrome %<CR><CR>
+nmap <Leader>o :!open -a Mou %<CR><CR>
 
 " TagBar
 nnoremap <silent> <Leader>tt :TagbarToggle<CR>
