@@ -73,7 +73,7 @@ set virtualedit=onemore                             " Allow for cursor beyond la
 set history=1000                                    " Store a ton of history (default is 20)
 set tabpagemax=15                                   " Only show 15 tabs
 set showmode                                        " Display the current mode
-" set cursorline                                      " Do not highlight current line
+set cursorline                                      " Do not highlight current line
 highlight clear SignColumn                          " SignColumn sould match background for
                                                     " things like signify
 set ruler                                           " Show the ruler
