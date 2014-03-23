@@ -63,6 +63,7 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
 Bundle 'greyblake/vim-preview'
