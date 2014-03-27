@@ -197,3 +197,4 @@ nnoremap <silent> <Plug>TransposeCharacters xp
 nmap cp <Plug>TransposeCharacters
 
 nnoremap <Leader>D :Dash!<CR>
+nnoremap <Leader>j :up<CR>
