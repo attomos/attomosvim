@@ -2,13 +2,11 @@
 Bundle 'gmarik/vundle'
 
 " General Programming
-" Bundle 'Lokaltog/vim-easymotion'
 Bundle 'justinmk/vim-sneak'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'git://github.com/Valloric/YouCompleteMe.git'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
@@ -18,9 +16,6 @@ Bundle 'junegunn/vim-easy-align'
 Bundle 'kana/vim-arpeggio'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
-
-" Hold on!
-"Bundle 'vim-scripts/PreserveNoEOL'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -66,7 +61,6 @@ Bundle 'bling/vim-airline'
 Bundle 'attomos/ultisnips'
 Bundle 'sjl/gundo.vim'
 Bundle 'greyblake/vim-preview'
-"Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/restore_view.vim'
 Bundle 'vim-scripts/LanguageTool'
 Bundle 'Shougo/unite.vim'
@@ -81,7 +75,4 @@ Bundle 'jgdavey/tslime.vim'
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'dtinth/vim-colors-dtinth256'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'jpo/vim-railscasts-theme'
