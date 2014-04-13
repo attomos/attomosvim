@@ -58,7 +58,9 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'bling/vim-airline'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'attomos/ultisnips'
+Bundle 'honza/vim-snippets'
 Bundle 'sjl/gundo.vim'
 Bundle 'greyblake/vim-preview'
 Bundle 'vim-scripts/restore_view.vim'
@@ -74,5 +76,6 @@ Bundle 'jgdavey/tslime.vim'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'flazz/vim-colorschemes'
+Bundle 'chriskempson/base16-vim'
 Bundle 'dtinth/vim-colors-dtinth256'
+Bundle 'flazz/vim-colorschemes'
