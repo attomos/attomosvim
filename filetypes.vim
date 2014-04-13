@@ -19,7 +19,4 @@ autocmd BufNewFile,BufReadPost *.m set filetype=objc
 
 " New
 autocmd FileType ruby set tags+=~/.RubyMotionTags
-autocmd FileType ruby set tags+=~/pos-tags
-autocmd FileType ruby set tags+=~/factory-tags
-autocmd FileType ruby set tags+=~/.RubyMotionTags
 autocmd FileType ruby set ts=2 sw=2 sts=2 et
