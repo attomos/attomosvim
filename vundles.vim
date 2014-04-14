@@ -43,6 +43,8 @@ Bundle 'matchit.zip'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
+" Latex
+Bundle 'jcf/vim-latex'
 " Markdown
 Bundle 'tpope/vim-markdown'
 " Puppet

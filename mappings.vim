@@ -118,9 +118,6 @@ nmap <Leader>o :!open -a Mou %<CR><CR>
 " TagBar
 nnoremap <silent> <Leader>tt :TagbarToggle<CR>
 
-" Tabman
-let g:tabman_toggle = '<Leader>tm'
-
 " https://vimeo.com/67215271
 " now <C-c> won't break the autoclose parentheses
 inoremap <C-c> <Esc>
@@ -185,6 +182,8 @@ function! ToggleRubyChecker()
   end
   echo g:syntastic_ruby_checkers[0]
 endfunction
+
+nnoremap <Leader>fj :SyntasticToggleMode<CR>
 
 nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
 
