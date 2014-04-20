@@ -75,6 +75,7 @@ Bundle 'Valloric/MatchTagAlways'
 Bundle 'epmatsw/ag.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
+Bundle 'henrik/vim-reveal-in-finder'
 
 " Colorscheme
 Bundle 'altercation/vim-colors-solarized'
