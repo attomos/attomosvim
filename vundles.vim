@@ -60,7 +60,6 @@ Bundle 'avakhov/vim-yaml'
 
 " Utilities
 Bundle 'bling/vim-airline'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'attomos/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'sjl/gundo.vim'
