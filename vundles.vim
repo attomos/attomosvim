@@ -38,7 +38,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'moll/vim-node'
 Bundle 'digitaltoad/vim-jade'
 " Go lang
-Bundle 'git@github.com:jnwhiteh/vim-golang.git'
+Bundle 'jnwhiteh/vim-golang'
 " HTML and friends
 Bundle 'matchit.zip'
 Bundle 'othree/html5.vim'
