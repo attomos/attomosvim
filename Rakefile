@@ -2,7 +2,7 @@ require 'date'
 require 'fileutils'
 
 task :install do
-  puts 'Install attomosvim'
+  puts 'Installing attomosvim'
   vimrc = File.expand_path('~/.vimrc')
   puts vimrc
   now = DateTime.now.strftime('%d-%m-%Y')
