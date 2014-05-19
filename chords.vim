@@ -16,6 +16,10 @@ function! chords#general()
   Arpeggio nnoremap wer :YcmRestartServer<CR>
 endfunction
 
+function! chords#c()
+  Arpeggio inoremap inc #include 
+endfunction
+
 function! chords#python()
   Arpeggio inoremap fun def ():<Left><Left><Left>
 endfunction
@@ -60,6 +64,7 @@ endfunction
 autocmd VimEnter * call chords#general()
 autocmd FileType python call chords#python()
 autocmd FileType coffee,javascript,jst,html call chords#javascript()
+autocmd FileType c call chords#c()
 autocmd FileType java call chords#java()
 autocmd FileType ruby call chords#ruby()
 let g:arpeggio_timeoutlen=25
