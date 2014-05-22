@@ -13,16 +13,16 @@ task :install do
   File.new(vimrc, 'w').tap do |f|
     f.write %q{" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={{{,}}} foldlevel=0 foldmethod=marker spell:
 source ~/.attomosvim/vimrc
-set bg=light
-colorscheme solarized
+set bg=dark
+colorscheme badwolf
 set shell=/bin/bash
 source ~/.attomosvim/good_highlight.vim
 let g:languagetool_jar="~/src/LanguageTool-2.3/languagetool-commandline.jar"
-hi Visual guifg=NONE guibg=#FFDB9D guisp=#3c414c gui=NONE ctermfg=NONE ctermbg=222 cterm=NONE
+" hi Visual guifg=NONE guibg=#FFDB9D guisp=#3c414c gui=NONE ctermfg=NONE ctermbg=222 cterm=NONE
 nnoremap zg <NOP>
 
 " Airline {{{
-let g:airline_theme = 'sol'
+" let g:airline_theme = 'sol'
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
