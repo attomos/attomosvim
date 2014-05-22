@@ -14,6 +14,7 @@ autocmd BufRead,BufNewFile *.py set ts=4 sw=4 sts=4 et
 autocmd BufRead,BufNewFile *.c,*.cpp,*.cc set ts=2 sw=2 sts=2 et
 autocmd BufRead,BufNewFile *.rb,*.gemspec,Gemfile,Rakefile set ts=2 sw=2 sts=2 et
 autocmd BufRead,BufNewFile *.vim set ts=2 sw=2 sts=2 et
+autocmd BufRead,BufNewFile *.php set ts=4 sw=4 sts=4 et
 autocmd BufNewFile,BufReadPost *.m set filetype=objc
 
 
