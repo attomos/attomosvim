@@ -11,6 +11,7 @@ autocmd BufRead,BufNewFile,BufEnter *.java let g:_custom_command = 'javac % && j
 autocmd BufRead,BufNewFile,BufEnter *.js let g:_custom_command = 'node %'
 autocmd BufRead,BufNewFile,BufEnter *.py let g:_custom_command = 'python %'
 autocmd BufRead,BufNewFile,BufEnter *.rb let g:_custom_command = 'ruby %'
+autocmd BufRead,BufNewFile,BufEnter *.scala let g:_custom_command = 'scala %'
 " }}}
 
 function! custom_command#run()
