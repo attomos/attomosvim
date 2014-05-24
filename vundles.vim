@@ -56,6 +56,8 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jmcantrell/vim-virtualenv'
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
+" Scala
+Bundle 'derekwyatt/vim-scala'
 " YAML
 Bundle 'avakhov/vim-yaml'
 
