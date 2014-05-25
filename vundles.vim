@@ -2,7 +2,7 @@
 Bundle 'gmarik/vundle'
 
 " General Programming
-Bundle 'justinmk/vim-sneak'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
@@ -73,7 +73,6 @@ Bundle 'Shougo/unite.vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Valloric/MatchTagAlways'
 Bundle 'epmatsw/ag.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'

@@ -11,8 +11,6 @@ hi SpellCap cterm=underline gui=underline
 hi SpellLocal cterm=underline gui=underline
 hi SpellRare cterm=underline gui=underline
 
-" Retired {{{
-" hi Search term=none cterm=none ctermfg=8 ctermbg=93 guifg=#ffffff guibg=#282828
 " syn match   myTodo   "\<\(TODO\|FIXME\|XXX\|NOTE\|HACK\|REVIEW\|OPTIMIZE\)\>"
 " hi def link myTodo Todo
 " hi def myTodo myTodo
@@ -21,14 +19,19 @@ hi SpellRare cterm=underline gui=underline
 " MatchTagAlways
 " let g:mta_use_matchparen_group = 0
 " let g:mta_set_default_matching_color = 0
-" highlight MatchTag ctermfg=black ctermbg=228 guifg=black guibg=lightgreen
-" }}}
 
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'eruby' : 1,
-    \ 'jinja' : 1,
-    \ 'jsp' : 1,
-    \}
+hi Search term=none cterm=none ctermfg=15 ctermbg=93 guifg=#ffffff guibg=#282828
+hi PMenu term=none cterm=none ctermfg=15 ctermbg=239 guifg=#ffffff guibg=#282828
+hi PMenuSel term=none cterm=none ctermfg=15 ctermbg=27 guifg=#ffffff guibg=#282828
+
+hi clear SpellLocal
+
+" highlight lines in Sy and vimdiff etc.)
+highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
+highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
+
+" highlight signs in Sy
+highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
+highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
