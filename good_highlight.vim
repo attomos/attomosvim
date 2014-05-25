@@ -22,7 +22,9 @@ hi SpellRare cterm=underline gui=underline
 
 hi Search term=none cterm=none ctermfg=15 ctermbg=93 guifg=#ffffff guibg=#282828
 hi PMenu term=none cterm=none ctermfg=15 ctermbg=239 guifg=#ffffff guibg=#282828
-hi PMenuSel term=none cterm=none ctermfg=15 ctermbg=27 guifg=#ffffff guibg=#282828
+hi PMenuSel term=none cterm=none ctermfg=15 ctermbg=27 guifg=#ffffff guibg=#0E7DFC
+hi TabLineSel term=none cterm=none ctermfg=15 ctermbg=56 guifg=#ffffff guibg=#282828
+hi ColorColumn term=none cterm=none ctermfg=red ctermbg=240 guifg=red guibg=#282828
 
 hi clear SpellLocal
 
