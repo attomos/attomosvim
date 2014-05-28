@@ -112,7 +112,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 " Preview current buffer either Chrome or Mou (Markdown editor)
-nmap <Leader>p :!open -a Google\ Chrome %<CR><CR>
+nmap <Leader>p :!open -a Google\ Chrome\ Canary %<CR><CR>
 nmap <Leader>o :!open -a Mou %<CR><CR>
 
 " TagBar
