@@ -108,7 +108,6 @@ exec "source " . s:dirname . "/custom_command.vim"
 exec "source " . s:dirname . "/ctrlpconf.vim"
 exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"
-exec "source " . s:dirname . "/jsdoc.vim"
 exec "source " . s:dirname . "/mappings.vim"
 " }}}
 
