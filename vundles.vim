@@ -48,6 +48,8 @@ Bundle 'slim-template/vim-slim'
 Bundle 'jcf/vim-latex'
 " Markdown
 Bundle 'tpope/vim-markdown'
+" PHP
+Bundle 'vim-scripts/php.vim'
 " Puppet
 Bundle 'Puppet-Syntax-Highlighting'
 " Python
