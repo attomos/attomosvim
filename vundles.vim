@@ -60,6 +60,8 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'vim-ruby/vim-ruby'
 " Scala
 Bundle 'derekwyatt/vim-scala'
+" Swift
+Bundle 'toyamarinyon/vim-swift'
 " YAML
 Bundle 'avakhov/vim-yaml'
 

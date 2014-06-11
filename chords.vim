@@ -61,10 +61,15 @@ function! chords#java()
   Arpeggio inoremap mia public static void main(String[] args) {<Cr>}<Esc>O
 endfunction
 
+function! chords#swift()
+  Arpeggio inoremap con println("")<Left><Left>
+endfunction
+
 autocmd VimEnter * call chords#general()
 autocmd FileType python call chords#python()
 autocmd FileType coffee,javascript,jst,html call chords#javascript()
 autocmd FileType c call chords#c()
 autocmd FileType java call chords#java()
 autocmd FileType ruby call chords#ruby()
+autocmd FileType swift call chords#swift()
 let g:arpeggio_timeoutlen=25
