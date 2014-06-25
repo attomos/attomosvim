@@ -62,6 +62,7 @@ function! chords#java()
 endfunction
 
 function! chords#swift()
+  Arpeggio inoremap cla class <Space>{<Cr>}<Up><Right><Right><Right><Right><Right>
   Arpeggio inoremap con println("")<Left><Left>
 endfunction
 
