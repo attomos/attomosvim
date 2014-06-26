@@ -13,8 +13,9 @@ task :install do
   File.new(vimrc, 'w').tap do |f|
     f.write %q{" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={{{,}}} foldlevel=0 foldmethod=marker spell:
 source ~/.attomosvim/vimrc
+set sh=/usr/local/bin/bash
 set bg=dark
-colorscheme dtinth256
+colorscheme Tomorrow-Night-Bright
 set shell=/bin/bash
 source ~/.attomosvim/good_highlight.vim
 let g:languagetool_jar="~/src/LanguageTool-2.3/languagetool-commandline.jar"
@@ -22,7 +23,7 @@ let g:languagetool_jar="~/src/LanguageTool-2.3/languagetool-commandline.jar"
 nnoremap zg <NOP>
 
 " Airline {{{
-let g:airline_theme = 'ubaryd'
+let g:airline_theme = 'tomorrow'
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
