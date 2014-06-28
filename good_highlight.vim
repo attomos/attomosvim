@@ -28,11 +28,11 @@ hi ColorColumn term=none cterm=none ctermfg=red ctermbg=240 guifg=red guibg=#282
 hi clear SpellLocal
 
 " highlight lines in Sy and vimdiff etc.)
-highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+highlight DiffAdd           cterm=bold ctermbg=none ctermfg=40
 highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
 highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
 
 " highlight signs in Sy
-highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=40
 highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
