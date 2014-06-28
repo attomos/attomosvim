@@ -73,7 +73,7 @@ vnoremap > >gv
 
 " Fugitive
 nnoremap <silent> <Leader>gs :Gstatus<CR>
-nnoremap <silent> <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gd :Gvdiff<CR>
 nnoremap <silent> <Leader>gc :Gcommit<CR>
 nnoremap <silent> <Leader>gb :Gblame<CR>
 nnoremap <silent> <Leader>gl :Glog<CR>
