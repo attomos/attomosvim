@@ -31,12 +31,6 @@ Plugin 'wavded/vim-stylus'
 Plugin 'groenewege/vim-less'
 " CSV
 Plugin 'chrisbra/csv.vim'
-" JS related
-Plugin 'pangloss/vim-javascript'
-Plugin 'briancollins/vim-jst'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'moll/vim-node'
-Plugin 'digitaltoad/vim-jade'
 " Go lang
 Plugin 'jnwhiteh/vim-golang'
 " HTML and friends
@@ -44,6 +38,14 @@ Plugin 'matchit.zip'
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-haml'
 Plugin 'slim-template/vim-slim'
+" JS
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'moll/vim-node'
+Plugin 'digitaltoad/vim-jade'
+" Julia
+Plugin 'JuliaLang/julia-vim'
 " Latex
 Plugin 'jcf/vim-latex'
 " Markdown
