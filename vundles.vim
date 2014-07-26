@@ -17,6 +17,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'kana/vim-arpeggio'
 Plugin 'rizzatti/funcoo.vim'
 Plugin 'rizzatti/dash.vim'
+Plugin 'saihoooooooo/glowshi-ft.vim'
 
 " Git
 Plugin 'tpope/vim-fugitive'
