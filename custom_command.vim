@@ -15,6 +15,7 @@ autocmd BufRead,BufNewFile,BufEnter *.scala let g:_custom_command = 'scala %'
 autocmd BufRead,BufNewFile,BufEnter *.go let g:_custom_command = 'go run %'
 autocmd BufRead,BufNewFile,BufEnter *.swift let g:_custom_command = 'swift -sdk $(xcrun --show-sdk-path --sdk macosx) % && ./%:r'
 autocmd BufRead,BufNewFile,BufEnter *.jl let g:_custom_command = 'julia %'
+autocmd BufRead,BufNewFile,BufEnter *.clj let g:_custom_command = 'lein exec %'
 " }}}
 
 function! custom_command#run()

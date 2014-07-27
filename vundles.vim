@@ -26,6 +26,9 @@ Plugin 'mattn/gist-vim'
 Plugin 'mhinz/vim-signify'
 
 " For each file type
+" Clojure
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-fireplace'
 " CSS related
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'wavded/vim-stylus'
