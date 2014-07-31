@@ -28,6 +28,7 @@ Plugin 'mhinz/vim-signify'
 " Clojure
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'
+Plugin 'guns/vim-clojure-highlight'
 " CSS related
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'wavded/vim-stylus'
