@@ -62,6 +62,7 @@ Plugin 'Puppet-Syntax-Highlighting'
 Plugin 'vim-scripts/python_match.vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'davidhalter/jedi-vim'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " Scala

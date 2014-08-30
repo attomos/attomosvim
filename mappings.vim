@@ -197,3 +197,8 @@ nmap cp <Plug>TransposeCharacters
 
 nnoremap <Leader>D :Dash!<CR>
 nnoremap <Leader>j :up<CR>
+
+" jedi-vim
+let g:jedi#goto_assignments_command = ""
+let g:jedi#rename_command = ""
+let g:jedi#show_call_signatures = "0"
