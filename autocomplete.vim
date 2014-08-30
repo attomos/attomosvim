@@ -10,3 +10,8 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 let g:UltiSnipsEditSplit="vertical"
 " Use your own fork is better than keep your snippets in Dropbox
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
+" jedi-vim
+let g:jedi#goto_assignments_command = ""
+let g:jedi#rename_command = ""
+let g:jedi#show_call_signatures = "0"
