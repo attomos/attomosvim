@@ -18,6 +18,8 @@ endfunction
 
 function! chords#c()
   Arpeggio inoremap inc #include 
+  Arpeggio inoremap con printf("");<Left><Left><Left>
+  Arpeggio inoremap mia void main()<Cr>{<Cr>}<Esc>O
 endfunction
 
 function! chords#python()
