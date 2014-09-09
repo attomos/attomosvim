@@ -16,7 +16,6 @@ source ~/.attomosvim/vimrc
 set sh=/usr/local/bin/bash
 set bg=dark
 colorscheme dtinth256
-set shell=/bin/bash
 source ~/.attomosvim/good_highlight.vim
 let g:languagetool_jar="~/src/LanguageTool-2.3/languagetool-commandline.jar"
 " hi Visual guifg=NONE guibg=#FFDB9D guisp=#3c414c gui=NONE ctermfg=NONE ctermbg=222 cterm=NONE
