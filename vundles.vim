@@ -26,7 +26,7 @@ Plugin 'mhinz/vim-signify'
 
 " For each file type
 " Clojure
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'eapache/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
 " CSS related
