@@ -2,13 +2,6 @@ let mapleader = " "
 
 " <CR> to clear matched patterns
 nnoremap <CR> :noh<CR>
-" from garybernhardt/dotfiles
-"function! MapCR()
-    "nnoremap <cr> :nohlsearch<cr>
-"endfunction
-"call MapCR()
-"autocmd! CmdwinEnter * :unmap <cr>
-"autocmd! CmdwinLeave * :call MapCR()
 
 " vim-easy-align
 vnoremap <silent> <Enter> :EasyAlign<cr>
