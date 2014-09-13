@@ -73,7 +73,6 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'avakhov/vim-yaml'
 
 " Utilities
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'attomos/ultisnips'
 Plugin 'honza/vim-snippets'
