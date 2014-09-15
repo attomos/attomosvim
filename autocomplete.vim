@@ -16,6 +16,3 @@ let g:jedi#goto_assignments_command = ""
 let g:jedi#rename_command = ""
 let g:jedi#show_call_signatures = "0"
 
-" neocomplete.vim
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
