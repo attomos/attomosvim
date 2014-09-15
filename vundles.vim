@@ -73,6 +73,7 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'avakhov/vim-yaml'
 
 " Utilities
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'bling/vim-airline'
 Plugin 'attomos/ultisnips'
 Plugin 'honza/vim-snippets'
