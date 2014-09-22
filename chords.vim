@@ -13,7 +13,7 @@ function! chords#general()
   Arpeggio nnoremap ql :qa<CR>
   Arpeggio nnoremap bp :bdelete<CR>
   Arpeggio cnoremap sdf \<\><Left><Left>
-  Arpeggio nnoremap wer :YcmRestartServer<CR>
+  Arpeggio nnoremap wer :%y*<CR>
 endfunction
 
 function! chords#c()
