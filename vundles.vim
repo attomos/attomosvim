@@ -49,7 +49,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'moll/vim-node'
 Plugin 'digitaltoad/vim-jade'
 " Julia
-Plugin 'JuliaLang/julia-vim'
+" Plugin 'JuliaLang/julia-vim'
 " Latex
 Plugin 'jcf/vim-latex'
 " Markdown

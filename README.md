@@ -47,9 +47,17 @@ automatic Vundle set up at the first time Vim run without Vundle installed.
 ## TODO
 - Write instructions for ctags, LanguageTool, linters, special chars, g:airline_mode_map config,  powerline font and YCM
 - [Exuberant Ctags](http://ctags.sourceforge.net/)
+
+        brew install ctags
+
 - [flake8](http://flake8.readthedocs.org/en/latest/)
+
+        pip install flake8
+
 - [Powerline font](https://github.com/Lokaltog/powerline-fonts)
 - [LanguageTool](http://www.languagetool.org/)
+
+        Download the latest version and extract it in ~/src
+
 - [Set locale for Mac](http://stackoverflow.com/questions/7165108/in-osx-lion-lang-is-not-set-to-utf8-how-fix)
 - [Set locale for Ubuntu](http://askubuntu.com/questions/193251/how-to-set-all-locale-settings-in-ubuntu)
-- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
