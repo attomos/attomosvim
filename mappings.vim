@@ -192,7 +192,8 @@ nnoremap <Leader>D :Dash!<CR>
 nnoremap <Leader>j :up<CR>
 
 " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
-" Faster :w
+" Faster :w combined with my :q
+nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 
 " Use Region expanding
