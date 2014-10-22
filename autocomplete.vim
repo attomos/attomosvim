@@ -6,7 +6,7 @@ let g:ycm_filetype_identifier_group = 0
 let g:UltiSnipsListSnippets="<C-l>"
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsEditSplit="vertical"
 " Use your own fork is better than keep your snippets in Dropbox
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
