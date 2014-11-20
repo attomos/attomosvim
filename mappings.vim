@@ -188,8 +188,7 @@ nnoremap <silent> <Plug>TransposeCharacters xp
 \:call repeat#set("\<Plug>TransposeCharacters")<CR>
 nmap cp <Plug>TransposeCharacters
 
-nnoremap <Leader>D :Dash!<CR>
-nnoremap <Leader>j :up<CR>
+" nnoremap <Leader>D :Dash!<CR>
 
 " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
 " Faster :w combined with my :q
@@ -199,6 +198,16 @@ nnoremap <Leader>w :w<CR>
 " Use Region expanding
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+
+function! Dict()
+  let word = @*
+  let term = get(a:000, 0, expand('<cword>'))
+  let l:command = "open dict://"  . term
+  execute ":silent! !" . l:command
+  redraw!
+endfunction
+
+nnoremap <Leader>d :call Dict()<CR>
 
 " Quickly select text you just pasted
 noremap gV `[v`]
