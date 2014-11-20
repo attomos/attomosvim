@@ -88,6 +88,7 @@ Plugin 'epmatsw/ag.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'henrik/vim-reveal-in-finder'
+Plugin 'gorkunov/smartgf.vim'
 
 " Colorscheme
 Plugin 'altercation/vim-colors-solarized'
