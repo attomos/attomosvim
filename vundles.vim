@@ -25,6 +25,8 @@ Plugin 'mattn/gist-vim'
 Plugin 'mhinz/vim-signify'
 
 " For each file type
+" C++
+Plugin 'octol/vim-cpp-enhanced-highlight'
 " Clojure
 Plugin 'eapache/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'

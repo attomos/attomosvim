@@ -118,6 +118,7 @@ exec "source " . s:dirname . "/mappings.vim"
 set term=screen-256color
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
+" let g:syntastic_cpp_checkers=['cpplint']
 let NERDSpaceDelims=1
 
 " A must
