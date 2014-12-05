@@ -16,3 +16,6 @@ let g:jedi#goto_assignments_command = ""
 let g:jedi#rename_command = ""
 let g:jedi#show_call_signatures = "0"
 
+" clang_complete
+let g:clang_library_path = "/Library/Developer/CommandLineTools/usr/lib"
+let g:clang_close_preview = 1

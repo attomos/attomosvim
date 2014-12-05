@@ -37,6 +37,8 @@ set wildmenu                                        " Better command-line comple
 set wildmode=list:longest,full                      " Command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]                       " Backspace and cursor keys wrap too
 
+" set path+=/usr/include/c++/**
+
 set showcmd                                         " Show partial commands in the last line of the screen
 set hlsearch                                        " Highlight search
 set incsearch                                       " While typing, show where the pattern

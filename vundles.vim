@@ -25,6 +25,8 @@ Plugin 'mattn/gist-vim'
 Plugin 'mhinz/vim-signify'
 
 " For each file type
+" C/C++
+Plugin 'rip-rip/clang_complete'
 " C++
 Plugin 'octol/vim-cpp-enhanced-highlight'
 " Clojure
@@ -90,7 +92,6 @@ Plugin 'epmatsw/ag.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'henrik/vim-reveal-in-finder'
-Plugin 'gorkunov/smartgf.vim'
 
 " Colorscheme
 Plugin 'altercation/vim-colors-solarized'
