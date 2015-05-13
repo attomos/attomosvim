@@ -28,7 +28,8 @@ Plugin 'mhinz/vim-signify'
 " C++
 Plugin 'octol/vim-cpp-enhanced-highlight'
 " Clojure
-Plugin 'eapache/rainbow_parentheses.vim'
+" TODO: not work well with Python template
+" Plugin 'eapache/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
 " CSS related
