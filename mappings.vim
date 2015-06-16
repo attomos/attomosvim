@@ -211,3 +211,7 @@ nnoremap <Leader>d :call Dict()<CR>
 
 " Quickly select text you just pasted
 noremap gV `[v`]
+
+" C-a and C-e
+inoremap  I
+inoremap  A

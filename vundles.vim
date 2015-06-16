@@ -66,6 +66,8 @@ Plug 'vim-scripts/python_match.vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'davidhalter/jedi-vim'
+Plug 'alfredodeza/pytest.vim'
+
 " Ruby
 Plug 'vim-ruby/vim-ruby'
 " Scala
