@@ -127,3 +127,4 @@ let NERDSpaceDelims=1
 " A must
 let g:syntastic_always_populate_loc_list = 1
 nnoremap <F1> :normal 1<CR>
+set rtp+=~/.fzf
