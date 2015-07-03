@@ -120,9 +120,11 @@ exec "source " . s:dirname . "/mappings.vim"
 set term=screen-256color
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
-" let g:syntastic_javascript_checkers=['jsxhint']
+let g:syntastic_javascript_checkers=['jsxhint']
 " let g:syntastic_cpp_checkers=['cpplint']
 let NERDSpaceDelims=1
+
+let g:plug_threads=1
 
 " A must
 let g:syntastic_always_populate_loc_list = 1

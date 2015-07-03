@@ -101,5 +101,6 @@ Plug 'chriskempson/base16-vim'
 Plug 'dtinth/vim-colors-dtinth256'
 Plug 'flazz/vim-colorschemes'
 Plug 'terryma/vim-expand-region'
+Plug 'yosiat/oceanic-next-vim'
 
 call plug#end()
