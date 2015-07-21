@@ -3,27 +3,25 @@ set nocompatible " no vi compatible
 
 let s:dirname = expand("<sfile>:p:h")
 
-" Setting up Vundle {{{
-let install_vundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Vundle..."
+" Setting up vim-plug {{{
+let install_plug=0
+let vim_plug=expand('~/.vim/autoload/plug.vim')
+if !filereadable(vim_plug)
+    echo "Installing vim-plug..."
     echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let install_vundle=0
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    let install_plug=1
 endif
 
 filetype off " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-exec "source " . s:dirname . "/vundles.vim"
+exec "source " . s:dirname . "/plugs.vim"
 filetype plugin indent on " required!
 
-if install_vundle == 0
-    echo "Installing Bundles, please ignore key map error messages"
+if install_plug == 1
+    echo "Installing plugins, please ignore key map error messages"
     echo ""
-    :BundleInstall
+    let g:plug_threads=1
+    :PlugInstall
 endif
 " }}}
 
@@ -124,7 +122,6 @@ let g:syntastic_javascript_checkers=['jsxhint']
 " let g:syntastic_cpp_checkers=['cpplint']
 let NERDSpaceDelims=1
 
-let g:plug_threads=1
 
 " A must
 let g:syntastic_always_populate_loc_list = 1
