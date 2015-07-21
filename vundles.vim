@@ -54,11 +54,9 @@ Plug 'digitaltoad/vim-jade'
 " Julia
 " Plug 'JuliaLang/julia-vim'
 " Latex
-Plug 'jcf/vim-latex'
+Plug 'lervag/vimtex'
 " Markdown
 Plug 'tpope/vim-markdown'
-" PHP
-Plug 'vim-scripts/php.vim'
 " Puppet
 Plug 'Puppet-Syntax-Highlighting'
 " Python
