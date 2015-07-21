@@ -46,11 +46,14 @@ Plug 'othree/html5.vim'
 Plug 'tpope/vim-haml'
 Plug 'slim-template/vim-slim'
 " JS
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 Plug 'briancollins/vim-jst'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node'
 Plug 'digitaltoad/vim-jade'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'marijnh/tern_for_vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 " Julia
 " Plug 'JuliaLang/julia-vim'
 " Latex
@@ -100,5 +103,8 @@ Plug 'dtinth/vim-colors-dtinth256'
 Plug 'flazz/vim-colorschemes'
 Plug 'terryma/vim-expand-region'
 Plug 'yosiat/oceanic-next-vim'
+Plug 'gryftir/gryffin'
+Plug 'w0ng/vim-hybrid'
+Plug 'vim-scripts/xoria256.vim'
 
 call plug#end()

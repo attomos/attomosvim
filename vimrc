@@ -122,6 +122,7 @@ let g:syntastic_javascript_checkers=['jsxhint']
 " let g:syntastic_cpp_checkers=['cpplint']
 let NERDSpaceDelims=1
 
+let g:plug_threads=1
 
 " A must
 let g:syntastic_always_populate_loc_list = 1
