@@ -21,7 +21,7 @@ hi SpellRare cterm=underline gui=underline
 " let g:mta_set_default_matching_color = 0
 
 hi Search term=none cterm=none ctermfg=0 ctermbg=83 guifg=#ffffff guibg=#282828
-hi IncSearch term=reverse cterm=reverse ctermfg=0 ctermbg=83 guifg=#ffffff guibg=#282828
+" hi IncSearch term=reverse cterm=reverse ctermfg=0 ctermbg=83 guifg=#ffffff guibg=#282828
 hi PMenu term=none cterm=none ctermfg=15 ctermbg=239 guifg=#ffffff guibg=#282828
 hi PMenuSel term=none cterm=none ctermfg=15 ctermbg=27 guifg=#ffffff guibg=#0E7DFC
 hi ColorColumn term=none cterm=none ctermfg=red ctermbg=240 guifg=red guibg=#282828

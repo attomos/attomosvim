@@ -17,6 +17,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-arpeggio'
 Plug 'rizzatti/funcoo.vim'
 Plug 'rizzatti/dash.vim'
+Plug 'mattn/emmet-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -54,6 +55,7 @@ Plug 'digitaltoad/vim-jade'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'marijnh/tern_for_vim'
 Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'jason0x43/vim-js-indent'
 " Julia
 " Plug 'JuliaLang/julia-vim'
 " Latex
