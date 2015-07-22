@@ -1,7 +1,7 @@
 " vim-plug for good : )
 call plug#begin('~/.vim/plugged')
 
-" General Programming
+" General
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
@@ -18,6 +18,7 @@ Plug 'kana/vim-arpeggio'
 Plug 'rizzatti/funcoo.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'mattn/emmet-vim'
+Plug 'terryma/vim-expand-region'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -103,10 +104,5 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
 Plug 'dtinth/vim-colors-dtinth256'
 Plug 'flazz/vim-colorschemes'
-Plug 'terryma/vim-expand-region'
-Plug 'yosiat/oceanic-next-vim'
-Plug 'gryftir/gryffin'
-Plug 'w0ng/vim-hybrid'
-Plug 'vim-scripts/xoria256.vim'
 
 call plug#end()
