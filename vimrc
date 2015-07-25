@@ -1,4 +1,4 @@
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={{{,}}} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker spell:
 set nocompatible " no vi compatible
 
 let s:dirname = expand("<sfile>:p:h")
@@ -38,7 +38,7 @@ set whichwrap=b,s,h,l,<,>,[,]                       " Backspace and cursor keys 
 " set path+=/usr/include/c++/**
 
 set showcmd                                         " Show partial commands in the last line of the screen
-set hlsearch                                        " Highlight search
+set hlsearch                                        " Highlight search CTRL-L :)
 set incsearch                                       " While typing, show where the pattern
 set ignorecase                                      " Use case insensitive search, except when using capital letters
 set smartcase                                       " Good when search pattern contains upper case characters
@@ -111,7 +111,7 @@ exec "source " . s:dirname . "/filetypes.vim"
 exec "source " . s:dirname . "/mappings.vim"
 " }}}
 
-" If your NERDTree look sucks, change it to 0
+" If NERDTree doesn't look right, change 1 to 0
 "let NERDTreeDirArrows=1
 
 " Fixed tmux messed up with some colorschemes

@@ -17,8 +17,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-arpeggio'
 Plug 'rizzatti/funcoo.vim'
 Plug 'rizzatti/dash.vim'
-Plug 'mattn/emmet-vim'
 Plug 'terryma/vim-expand-region'
+Plug 'tristen/vim-sparkup'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -30,10 +31,8 @@ Plug 'mhinz/vim-signify'
 " C++
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Clojure
-" TODO: not work well with Python template
-" Plug 'eapache/rainbow_parentheses.vim'
-Plug 'tpope/vim-fireplace'
-Plug 'guns/vim-clojure-highlight'
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
 " CSS related
 Plug 'hail2u/vim-css3-syntax'
 Plug 'wavded/vim-stylus'

@@ -19,6 +19,10 @@ autocmd BufRead,BufNewFile *.php set sts=0 sw=2 ts=2 noet
 
 autocmd BufNewFile,BufReadPost *.m set filetype=objc
 
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,clojure,scheme RainbowParentheses
+augroup END
 
 " New
 autocmd FileType ruby set tags+=~/.RubyMotionTags
