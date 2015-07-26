@@ -4,7 +4,7 @@ let mapleader = " "
 nnoremap <CR> :noh<CR>
 
 " vim-easy-align
-vnoremap <silent> <Enter> :EasyAlign<cr>
+vnoremap <silent> <Enter> :EasyAlign<CR>
 
 " Shortcuts
 " Change Working Directory to that of the current file
@@ -116,9 +116,9 @@ nnoremap <silent> <Leader>tt :TagbarToggle<CR>
 inoremap <C-c> <Esc>
 
 " custom command
-map <Leader>r :call custom_command#run()<cr>
-map <Leader>sc :call custom_command#set()<cr>
-map <silent> <Leader>sr  :call custom_command#reset()<cr>
+map <Leader>r :call custom_command#run()<CR>
+map <Leader>sc :call custom_command#set()<CR>
+map <silent> <Leader>sr  :call custom_command#reset()<CR>
 
 " http://statico.github.io/vim.html
 nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>
@@ -213,6 +213,9 @@ nnoremap <Leader>d :call Dict()<CR>
 noremap gV `[v`]
 
 " maksimr/vim-jsbeautify
+autocmd FileType javascript noremap <buffer>  <C-F> :call JsBeautify()<CR>
+autocmd FileType html noremap <buffer> <C-F> :call HtmlBeautify()<CR>
+autocmd FileType css noremap <buffer> <C-F> :call CSSBeautify()<CR>
 autocmd FileType javascript vnoremap <buffer> <C-F> :call RangeJsBeautify()<CR>
 autocmd FileType html vnoremap <buffer> <C-F> :call RangeHtmlBeautify()<CR>
 autocmd FileType css vnoremap <buffer> <C-F> :call RangeCSSBeautify()<CR>

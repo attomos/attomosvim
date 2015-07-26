@@ -55,7 +55,6 @@ function! chords#javascript()
   Arpeggio inoremap con console.log
   Arpeggio inoremap fun function
   Arpeggio inoremap FUN Function
-  Arpeggio nnoremap sdf :call JsBeautify()<CR>
 endfunction
 
 function! chords#java()
