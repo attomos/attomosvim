@@ -211,3 +211,8 @@ nnoremap <Leader>d :call Dict()<CR>
 
 " Quickly select text you just pasted
 noremap gV `[v`]
+
+" maksimr/vim-jsbeautify
+autocmd FileType javascript vnoremap <buffer> <C-F> :call RangeJsBeautify()<CR>
+autocmd FileType html vnoremap <buffer> <C-F> :call RangeHtmlBeautify()<CR>
+autocmd FileType css vnoremap <buffer> <C-F> :call RangeCSSBeautify()<CR>

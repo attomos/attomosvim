@@ -55,6 +55,8 @@ Plug 'digitaltoad/vim-jade'
 Plug 'marijnh/tern_for_vim'
 Plug 'jason0x43/vim-js-indent'
 Plug 'mxw/vim-jsx'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'maksimr/vim-jsbeautify'
 " Julia
 " Plug 'JuliaLang/julia-vim'
 " Latex

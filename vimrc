@@ -128,3 +128,6 @@ let g:plug_threads=1
 let g:syntastic_always_populate_loc_list = 1
 nnoremap <F1> :normal 1<CR>
 set rtp+=~/.fzf
+
+" Syntax for these JS libraries
+let g:used_javascript_libs='jquery,underscore,react,angularjs,angularui'
