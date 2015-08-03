@@ -1,6 +1,6 @@
 " Special indent and syntax highlight for some file types
 autocmd BufRead,BufNewFile Vagrantfile set ft=ruby
-autocmd BufRead,BufNewFile *.coffee,*.js set ts=2 sw=2 sts=2 et
+autocmd BufRead,BufNewFile *.coffee,*.js,*.es,*.es6,*.jsx set ts=2 sw=2 sts=2 et
 autocmd BufRead,BufNewFile *.html set ts=2 sw=2 sts=2 et ft=htmldjango
 autocmd BufRead,BufNewFile *.ejs,*.erb set ts=2 sw=2 sts=2 et
 autocmd BufRead,BufNewFile *.jsp set ts=2 sw=2 sts=2 et

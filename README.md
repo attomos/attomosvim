@@ -9,7 +9,7 @@ Inspired by [spf13-vim](https://github.com/spf13/spf13-vim), [dtinth's
 
 ## Automatic way (\*nix only)
 This will remove all of your existing `.vimrc` and `.vim` directory.  
-Please backup and use at your own risk.
+Please backup your vim config before doing this.
 
 via [Curl](http://curl.haxx.se/)
 
@@ -44,20 +44,34 @@ Then just start using `vim`.
 Thanks [fisa-vim-config](https://github.com/fisadev/fisa-vim-config) for awesome
 automatic Vundle set up at the first time Vim run without Vundle installed.
 
-## TODO
-- Write instructions for ctags, LanguageTool, linters, special chars, g:airline_mode_map config,  powerline font and YCM
-- [Exuberant Ctags](http://ctags.sourceforge.net/)
+
+## Install latest version of these
+- [ag](https://github.com/ggreer/the_silver_searcher)
+
+        brew install ag
+
+- [ctags](http://ctags.sourceforge.net/)
 
         brew install ctags
+
+- [Dash](https://kapeli.com/dash)
+
+        brew cask install dash # or download and install it manually
 
 - [flake8](http://flake8.readthedocs.org/en/latest/)
 
         pip install flake8
 
+- [fzf](https://github.com/junegunn/fzf)
+
+        brew reinstall --HEAD fzf
+        /usr/local/Cellar/fzf/HEAD/install
+
+- [LanguageTool](https://languagetool.org/)
+
+        Download stand-alone version and extract it in ~/src
+
+## TODO
 - [Powerline font](https://github.com/Lokaltog/powerline-fonts)
-- [LanguageTool](http://www.languagetool.org/)
-
-        Download the latest version and extract it in ~/src
-
 - [Set locale for Mac](http://stackoverflow.com/questions/7165108/in-osx-lion-lang-is-not-set-to-utf8-how-fix)
 - [Set locale for Ubuntu](http://askubuntu.com/questions/193251/how-to-set-all-locale-settings-in-ubuntu)

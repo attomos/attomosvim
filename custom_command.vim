@@ -9,6 +9,7 @@ autocmd BufRead,BufNewFile,BufEnter *.c let g:_custom_command = 'make -s %:r && 
 autocmd BufRead,BufNewFile,BufEnter *.cpp,*.cc let g:_custom_command = 'make -s %:r && ./%:r'
 autocmd BufRead,BufNewFile,BufEnter *.java let g:_custom_command = 'javac % && java %:r'
 autocmd BufRead,BufNewFile,BufEnter *.js let g:_custom_command = 'node %'
+autocmd BufRead,BufNewFile,BufEnter *.es,*.es6,*.jsx let g:_custom_command = 'babel-node %'
 autocmd BufRead,BufNewFile,BufEnter *.py let g:_custom_command = 'python %'
 autocmd BufRead,BufNewFile,BufEnter *.rb let g:_custom_command = 'ruby %'
 autocmd BufRead,BufNewFile,BufEnter *.scala let g:_custom_command = 'scala %'

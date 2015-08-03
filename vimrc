@@ -131,3 +131,6 @@ set rtp+=~/.fzf
 
 " Syntax for these JS libraries
 let g:used_javascript_libs='jquery,underscore,react,angularjs,angularui'
+
+let g:sparkupMappingInsertModeOnly = 1
+
