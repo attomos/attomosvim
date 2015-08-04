@@ -47,7 +47,7 @@ Plug 'othree/html5.vim'
 Plug 'tpope/vim-haml'
 Plug 'slim-template/vim-slim'
 " JS
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'briancollins/vim-jst'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node'
@@ -55,7 +55,7 @@ Plug 'digitaltoad/vim-jade'
 Plug 'marijnh/tern_for_vim'
 Plug 'jason0x43/vim-js-indent'
 Plug 'mxw/vim-jsx'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'maksimr/vim-jsbeautify'
 " Julia
 " Plug 'JuliaLang/julia-vim'

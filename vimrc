@@ -130,7 +130,7 @@ nnoremap <F1> :normal 1<CR>
 set rtp+=~/.fzf
 
 " Syntax for these JS libraries
-let g:used_javascript_libs='jquery,underscore,react,angularjs,angularui'
+let g:used_javascript_libs='jquery,underscore,react,angularjs,angularui,chai'
 
 let g:sparkupMappingInsertModeOnly = 1
 
