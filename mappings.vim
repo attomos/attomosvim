@@ -97,8 +97,8 @@ vnoremap . :normal .<CR>
 "vmap <C-Up> [egv
 "vmap <C-Down> ]egv
 
-" Gundo
-nmap <F5> :GundoToggle<CR>
+" Undotree
+nmap <F5> :UndotreeToggle<CR>
 
 " Use <F2> to toggle between 'paste' and 'nopaste'
 nnoremap <F2> :set invpaste paste?<CR>
@@ -219,3 +219,10 @@ autocmd FileType css noremap <buffer> <C-F> :call CSSBeautify()<CR>
 autocmd FileType javascript vnoremap <buffer> <C-F> :call RangeJsBeautify()<CR>
 autocmd FileType html vnoremap <buffer> <C-F> :call RangeHtmlBeautify()<CR>
 autocmd FileType css vnoremap <buffer> <C-F> :call RangeCSSBeautify()<CR>
+
+" Movement in insert mode
+inoremap <C-h> <C-o>h
+inoremap <C-l> <C-o>a
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-^> <C-o><C-^>
