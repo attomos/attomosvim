@@ -119,6 +119,7 @@ set term=screen-256color
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
 let g:syntastic_javascript_checkers=['jsxhint']
+let g:syntastic_python_flake8_args='--max-complexity 10'
 " let g:syntastic_cpp_checkers=['cpplint']
 let NERDSpaceDelims=1
 

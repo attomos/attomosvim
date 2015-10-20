@@ -52,6 +52,7 @@ Plug 'jason0x43/vim-js-indent'
 Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'maksimr/vim-jsbeautify'
+Plug 'leafgarland/typescript-vim'
 
 " Julia
 " Plug 'JuliaLang/julia-vim'
