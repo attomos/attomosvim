@@ -44,7 +44,6 @@ Plug 'matchit.zip'
 Plug 'othree/html5.vim'
 
 " JS
-Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node'
 Plug 'marijnh/tern_for_vim'
