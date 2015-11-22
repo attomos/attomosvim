@@ -12,3 +12,6 @@ let g:ctrlp_user_command = {
 \ }
 let g:ctrlp_extensions = ['funky']
 let g:ctrlp_use_caching = 20
+
+" ctrlp-funky
+let g:ctrlp_funky_matchtype = 'path'

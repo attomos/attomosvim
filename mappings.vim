@@ -25,6 +25,9 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+" vim-easymotion
+nmap s <Plug>(easymotion-s2)
+
 " Fast tabs
 map <S-H> gT
 map <S-L> gt

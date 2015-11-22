@@ -91,6 +91,7 @@ Plug 'mattn/webapi-vim'
 Plug 'guns/xterm-color-table.vim'
 Plug 'nazo/pt.vim'
 Plug 'jgdavey/tslime.vim'
+Plug 'michaeljsmith/vim-indent-object'
 
 " Colorscheme
 Plug 'dtinth/vim-colors-dtinth256'
