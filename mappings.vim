@@ -70,10 +70,10 @@ vnoremap > >gv
 " Fugitive
 nnoremap <silent> <Leader>gs :Gstatus<CR>
 nnoremap <silent> <Leader>gd :Gvdiff<CR>
-nnoremap <silent> <Leader>gc :Gcommit<CR>
+nnoremap <silent> <Leader>gc :Gcommit --verbose<CR>
 nnoremap <silent> <Leader>gb :Gblame<CR>
 nnoremap <silent> <Leader>gl :Glog<CR>
-nnoremap <silent> <Leader>gp :Git push<CR>
+nnoremap <silent> <Leader>gp :Gpush<CR>
 
 " Toggle list characters
 map <Leader>l :set list!<CR>
@@ -229,3 +229,6 @@ inoremap <C-l> <C-o>a
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-^> <C-o><C-^>
+
+" Better tag matching
+nmap <Leader>% :MtaJumpToOtherTag<cr>

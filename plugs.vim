@@ -16,6 +16,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-arpeggio'
 Plug 'tristen/vim-sparkup'
 Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -49,7 +50,7 @@ Plug 'moll/vim-node'
 Plug 'marijnh/tern_for_vim'
 Plug 'jason0x43/vim-js-indent'
 Plug 'mxw/vim-jsx'
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'leafgarland/typescript-vim'
 
@@ -96,5 +97,10 @@ Plug 'michaeljsmith/vim-indent-object'
 " Colorscheme
 Plug 'dtinth/vim-colors-dtinth256'
 Plug 'flazz/vim-colorschemes'
+Plug 'tomasr/molokai'
+Plug 'fmoralesc/molokayo'
+Plug 'chriskempson/base16-vim'
+Plug 'michaeljsmith/vim-indent-object'
+
 
 call plug#end()

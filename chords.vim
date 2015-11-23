@@ -7,7 +7,11 @@ function! chords#general()
   Arpeggio inoremap [] []<Left>
   Arpeggio inoremap ret return<Space>
   Arpeggio nnoremap jkl ciw
-  Arpeggio nnoremap kl :Silent clear<CR>
+  if has('win32') || has('win64')
+    Arpeggio nnoremap kl :Silent cls<CR>
+  else
+    Arpeggio nnoremap kl :Silent clear<CR>
+  endif
   Arpeggio nnoremap zp ZZ
   Arpeggio nnoremap qp ZQ
   Arpeggio nnoremap ql :qa<CR>
