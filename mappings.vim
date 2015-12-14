@@ -232,3 +232,16 @@ inoremap <C-^> <C-o><C-^>
 
 " Better tag matching
 nmap <Leader>% :MtaJumpToOtherTag<cr>
+
+" hunk jumping
+nmap gj <plug>(signify-next-hunk)
+nmap gk <plug>(signify-prev-hunk)
+
+" hunk text object
+omap ic <plug>(signify-motion-inner-pending)
+xmap ic <plug>(signify-motion-inner-visual)
+omap ac <plug>(signify-motion-outer-pending)
+xmap ac <plug>(signify-motion-outer-visual)
+" https://github.com/mhinz/vim-signify/commit/97e324a281e6ad38786fbb54ac70819db80a5aa7
+" Sytastic error should be more important than signify
+let g:signify_sign_overwrite=0

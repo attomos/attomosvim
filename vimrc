@@ -1,4 +1,4 @@
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker spell:
+" vim: set sw=2 ts=2 sts=2 et tw=78 foldlevel=0 foldmethod=marker spell:
 set nocompatible " no vi compatible
 
 let s:dirname = expand("<sfile>:p:h")
@@ -7,10 +7,10 @@ let s:dirname = expand("<sfile>:p:h")
 let install_plug=0
 let vim_plug=expand('~/.vim/autoload/plug.vim')
 if !filereadable(vim_plug)
-    echo "Installing vim-plug..."
-    echo ""
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    let install_plug=1
+  echo "Installing vim-plug..."
+  echo ""
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  let install_plug=1
 endif
 
 filetype off " required!
@@ -18,10 +18,10 @@ exec "source " . s:dirname . "/plugs.vim"
 filetype plugin indent on " required!
 
 if install_plug == 1
-    echo "Installing plugins, please ignore key map error messages"
-    echo ""
-    let g:plug_threads=1
-    :PlugInstall
+  echo "Installing plugins, please ignore key map error messages"
+  echo ""
+  let g:plug_threads=1
+  :PlugInstall
 endif
 " }}}
 
@@ -34,6 +34,7 @@ set hidden                                          " good for editing 2 or more
 set wildmenu                                        " Better command-line completion
 set wildmode=list:longest,full                      " Command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]                       " Backspace and cursor keys wrap too
+set splitright                                      " Always split window on the right.
 
 " set path+=/usr/include/c++/**
 
@@ -93,15 +94,15 @@ set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:¬
 
 " Strip whitespace {{{
 function! StripTrailingWhitespace()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " do the business:
-    %s/\s\+$//e
-    " clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " do the business:
+  %s/\s\+$//e
+  " clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
 endfunction
 " }}}
 
@@ -111,7 +112,6 @@ exec "source " . s:dirname . "/backup.vim"
 exec "source " . s:dirname . "/chords.vim"
 exec "source " . s:dirname . "/custom_command.vim"
 exec "source " . s:dirname . "/ctrlpconf.vim"
-exec "source " . s:dirname . "/etc.vim"
 exec "source " . s:dirname . "/filetypes.vim"
 exec "source " . s:dirname . "/mappings.vim"
 " }}}
@@ -142,16 +142,22 @@ let g:used_javascript_libs='jquery,underscore,react,angularjs,angularui,chai'
 
 let g:sparkupMappingInsertModeOnly = 1
 
+" http://vi.stackexchange.com/a/247/2446
+if &term =~ '256color'
+  " disable Background Color Erase (BCE)
+  set t_ut=
+endif
+
 if has('win32') || has('win64')
-    set term=xterm
-    set t_ut= " setting for looking properly in tmux
-    set t_ti= t_te= " prevent vim from clobbering the scrollback buffer
-    let &t_Co = 256
-    " trick to support 256 colors and scroll in conemu
-    let &t_AF="\e[38;5;%dm"
-    let &t_AB="\e[48;5;%dm"
-    inoremap <esc>[62~ <c-x><c-e>
-    inoremap <esc>[63~ <c-x><c-y>
-    nnoremap <esc>[62~ 3<c-e>
-    nnoremap <esc>[63~ 3<c-y>
+  set term=xterm
+  set t_ut= " setting for looking properly in tmux
+  set t_ti= t_te= " prevent vim from clobbering the scrollback buffer
+  let &t_Co = 256
+  " trick to support 256 colors and scroll in conemu
+  let &t_AF="\e[38;5;%dm"
+  let &t_AB="\e[48;5;%dm"
+  inoremap <esc>[62~ <c-x><c-e>
+  inoremap <esc>[63~ <c-x><c-y>
+  nnoremap <esc>[62~ 3<c-e>
+  nnoremap <esc>[63~ 3<c-y>
 endif
