@@ -123,9 +123,11 @@ exec "source " . s:dirname . "/mappings.vim"
 " set term=screen-256color
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_html_checkers=[]
-let g:syntastic_javascript_checkers=['jshint']
+" let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_python_flake8_args='--max-complexity 10'
 " let g:syntastic_cpp_checkers=['cpplint']
+let g:syntastic_c_include_dirs=['/usr/local/include/']
 let NERDSpaceDelims=1
 
 let g:plug_threads=1
