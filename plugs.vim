@@ -95,6 +95,7 @@ Plug 'guns/xterm-color-table.vim'
 Plug 'nazo/pt.vim'
 Plug 'benmills/vimux'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'vim-scripts/YankRing.vim'
 
 " Colorscheme
 Plug 'dtinth/vim-colors-dtinth256'

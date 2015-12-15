@@ -107,7 +107,7 @@ nmap <Leader>P :!open -a Google\ Chrome %<CR><CR>
 nmap <Leader>o :!open -a Mou %<CR><CR>
 
 " TagBar
-nnoremap <silent> <Leader>tt :TagbarToggle<CR>
+nnoremap <silent> <Leader>TT :TagbarToggle<CR>
 
 " https://vimeo.com/67215271
 " now <C-c> won't break the autoclose parentheses
@@ -225,6 +225,11 @@ let g:signify_sign_overwrite=0
 xmap ig :normal ggVG<CR>
 omap ig :normal ggVG<CR>
 
+" YankRing.vim
+nnoremap <Leader>;; :YRShow<CR>
+nnoremap <Leader>;: :YRSearch<CR>
+nnoremap <Leader>;c :YRClear<CR>
+
 " JavaScript mappings
 let g:tern_map_prefix = '<Leader>'
 let g:tern_show_argument_hints='on_hold'
@@ -232,7 +237,7 @@ function! mappings#js()
   nmap <silent> <C-l> <Plug>(jsdoc)
   nnoremap <silent> <Leader>td :TernDoc<CR>
   nnoremap <silent> <Leader>tb :TernDocBrowse<CR>
-  nnoremap <silent> <Leader>tT :TernType<CR>
+  nnoremap <silent> <Leader>tt :TernType<CR>
   nnoremap <silent> <Leader>td :TernDef<CR>
   nnoremap <silent> <Leader>tR :TernRename<CR>
 endfunction
