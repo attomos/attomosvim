@@ -4,8 +4,9 @@ call plug#begin('~/.vim/plugged')
 " General
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/syntastic'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
+Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
@@ -53,6 +54,7 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'leafgarland/typescript-vim'
+Plug 'heavenshell/vim-jsdoc'
 
 " Julia
 " Plug 'JuliaLang/julia-vim'
@@ -91,7 +93,7 @@ Plug 'Shougo/unite.vim'
 Plug 'mattn/webapi-vim'
 Plug 'guns/xterm-color-table.vim'
 Plug 'nazo/pt.vim'
-Plug 'jgdavey/tslime.vim'
+Plug 'benmills/vimux'
 Plug 'michaeljsmith/vim-indent-object'
 
 " Colorscheme
@@ -101,6 +103,5 @@ Plug 'tomasr/molokai'
 Plug 'fmoralesc/molokayo'
 Plug 'chriskempson/base16-vim'
 Plug 'michaeljsmith/vim-indent-object'
-
 
 call plug#end()

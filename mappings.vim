@@ -82,33 +82,28 @@ map <Leader>l :set list!<CR>
 nmap <Leader>ss :set spell!<CR>:set spell?<CR>
 
 " CtrlP mappings (from https://github.com/fisadev/fisa-vim-config)
-" Adapted some to make me comfy
+" Altered some to suit my needs
 nnoremap <Leader>gg :CtrlPBufTag<CR>
 nnoremap <Leader>G :CtrlPBufTagAll<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>F :CtrlPLine<CR>
 nnoremap <Leader>m :CtrlPMRUFiles<CR>
 nnoremap <Leader>fu :CtrlPFunky<CR>
+nnoremap <Leader>M :CtrlPModified<CR>
 
 " Allow using the repeat operator with a visual selection (!)
 " http://stackoverflow.com/a/8064607/127816
 vnoremap . :normal .<CR>
 
-" Bubble single lines
-"nmap <C-Up> [e
-"nmap <C-Down> ]e
-" Bubble multiple lines
-"vmap <C-Up> [egv
-"vmap <C-Down> ]egv
-
 " Undotree
 nmap <F5> :UndotreeToggle<CR>
 
 " Use <F2> to toggle between 'paste' and 'nopaste'
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+nnoremap <F2> :set paste!<CR>
+" set pastetoggle=<F2>
 
 " Preview current buffer either Chrome or Mou (Markdown editor)
-nmap <Leader>p :!open -a Google\ Chrome %<CR><CR>
+nmap <Leader>P :!open -a Google\ Chrome %<CR><CR>
 nmap <Leader>o :!open -a Mou %<CR><CR>
 
 " TagBar
@@ -134,38 +129,19 @@ command! -nargs=1 Silent
 
 map <Leader>sl :Silent<Space>
 
-nnoremap <silent> <Leader>ig :IndentGuidesToggle<CR>
-
 " Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
 nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 nnoremap \et :set expandtab!<CR>:set expandtab?<CR>
 
-"let g:seek_subst_disable = 1
-"let g:SeekKey = '<Space>'
-"let g:SeekBackKey = '<S-Space>'
-
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
-
-" vim-rpec mappings
-map <Leader>T :call RunCurrentSpecFile()<CR>
-map <Leader>S :call RunNearestSpec()<CR>
-map <Leader>L :call RunLastSpec()<CR>
-map <Leader>A :call RunAllSpecs()<CR>
-
-vmap <C-t><C-t> <Plug>SendSelectionToTmux
-nmap <C-t><C-t> <Plug>NormalModeSendToTmux
-nmap <C-t>r <Plug>SetTmuxVars
-
-" Send to tmux
-" Send custom command to tmux
+" Run custom command in tmux using Vimux.
 " FIXME: Better write function to get the proper path
-map <silent> <Leader>R :call Send_to_Tmux(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), "") . "\n")<CR>
+map <silent> <Leader>R :call VimuxRunCommand(substitute(substitute(g:custom_command, "%:r", expand("%:r"), ""), "%", expand("%"), ""))<CR>
 " Send `clear` to tmux
-map <silent> <Leader>K :call Send_to_Tmux("clear\n")<CR>
+map <silent> <Leader>K :call VimuxRunCommand("clear")<CR>
 " Send  to tmux
-map <silent> <Leader>C :call Send_to_Tmux("\u0003")<CR>
+map <silent> <Leader>C :call VimuxRunCommand("\u0003", 0)<CR>
 
 " Stripe whitespace
 nmap <silent> <Leader>st :call StripTrailingWhitespace()<CR>
@@ -180,7 +156,6 @@ function! ToggleRubyChecker()
 endfunction
 
 nnoremap <Leader>fj :SyntasticToggleMode<CR>
-
 nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
 
 " From http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
@@ -249,3 +224,17 @@ let g:signify_sign_overwrite=0
 " text object for whole buffer
 xmap ig :normal ggVG<CR>
 omap ig :normal ggVG<CR>
+
+" JavaScript mappings
+let g:tern_map_prefix = '<Leader>'
+let g:tern_show_argument_hints='on_hold'
+function! mappings#js()
+  nmap <silent> <C-l> <Plug>(jsdoc)
+  nnoremap <silent> <Leader>td :TernDoc<CR>
+  nnoremap <silent> <Leader>tb :TernDocBrowse<CR>
+  nnoremap <silent> <Leader>tT :TernType<CR>
+  nnoremap <silent> <Leader>td :TernDef<CR>
+  nnoremap <silent> <Leader>tR :TernRename<CR>
+endfunction
+
+autocmd FileType coffee,javascript,jst,html call mappings#js()
