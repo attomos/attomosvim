@@ -27,6 +27,7 @@ map <C-H> <C-W>h
 
 " vim-easymotion
 nmap s <Plug>(easymotion-s2)
+vmap s <Plug>(easymotion-s2)
 
 " Fast tabs
 map <S-H> gT
@@ -85,7 +86,7 @@ nmap <Leader>ss :set spell!<CR>:set spell?<CR>
 " Altered some to suit my needs
 nnoremap <Leader>gg :CtrlPBufTag<CR>
 nnoremap <Leader>G :CtrlPBufTagAll<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>bb :CtrlPBuffer<CR> " consider CtrlPMixed?
 nnoremap <Leader>F :CtrlPLine<CR>
 nnoremap <Leader>m :CtrlPMRUFiles<CR>
 nnoremap <Leader>fu :CtrlPFunky<CR>
@@ -224,6 +225,9 @@ let g:signify_sign_overwrite=0
 " text object for whole buffer
 xmap ig :normal ggVG<CR>
 omap ig :normal ggVG<CR>
+
+" Buffer
+nnoremap <Leader>bd :bdel<CR>
 
 " YankRing.vim
 nnoremap <Leader>;; :YRShow<CR>

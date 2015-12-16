@@ -35,6 +35,7 @@ set wildmenu                                        " Better command-line comple
 set wildmode=list:longest,full                      " Command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]                       " Backspace and cursor keys wrap too
 set splitright                                      " Always split window on the right.
+set clipboard=unnamed                               " Share yank/paste with OS's clipboard.
 
 " set path+=/usr/include/c++/**
 
