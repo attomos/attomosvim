@@ -234,7 +234,7 @@ nnoremap <Leader>;c :YRClear<CR>
 let g:tern_map_prefix = '<Leader>'
 let g:tern_show_argument_hints='on_hold'
 function! mappings#js()
-  nmap <silent> <C-l> <Plug>(jsdoc)
+  nnoremap <silent> <Leader>jd :JsDoc<CR>
   nnoremap <silent> <Leader>td :TernDoc<CR>
   nnoremap <silent> <Leader>tb :TernDocBrowse<CR>
   nnoremap <silent> <Leader>tt :TernType<CR>

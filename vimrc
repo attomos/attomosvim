@@ -87,8 +87,12 @@ set winminheight=0                                  " Windows height only 0
 scriptencoding utf-8
 set encoding=utf-8
 set nolist                                          " No list characters by default
-" set listchars=tab:›\ ,trail:•,extends:#,nbsp:.,eol:¬  " Highlight problematic whitespace
-set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:¬
+" Highlight problematic whitespace
+if (has('win32') || has('win64'))
+  set listchars=tab:>-,trail:.,precedes:<,extends:>,eol:¬
+else
+  set listchars=tab:›\ ,trail:•,extends:#,nbsp:.,eol:¬
+endif
 
 " }}}
 
