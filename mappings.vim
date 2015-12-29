@@ -156,8 +156,18 @@ function! ToggleRubyChecker()
   echo g:syntastic_ruby_checkers[0]
 endfunction
 
+function! ToggleJSChecker()
+  if g:syntastic_javascript_checkers == ['eslint']
+    let g:syntastic_javascript_checkers=['jshint']
+  else
+    let g:syntastic_javascript_checkers=['eslint']
+  end
+  echo g:syntastic_javascript_checkers[0]
+endfunction
+
 nnoremap <Leader>fj :SyntasticToggleMode<CR>
-nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
+" nnoremap <Leader>\ :call ToggleRubyChecker()<CR>
+nnoremap <Leader>\ :call ToggleJSChecker()<CR>
 
 " From http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
 nnoremap Q :normal n.<CR>
@@ -247,3 +257,15 @@ function! mappings#js()
 endfunction
 
 autocmd FileType coffee,javascript,jst,html call mappings#js()
+
+" Search for selected text, forwards or backwards.
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>

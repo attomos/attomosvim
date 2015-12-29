@@ -46,14 +46,15 @@ Plug 'matchit.zip'
 Plug 'othree/html5.vim'
 
 " JS
-Plug 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 Plug 'moll/vim-node'
 Plug 'marijnh/tern_for_vim'
-Plug 'jason0x43/vim-js-indent'
+" Plug 'jason0x43/vim-js-indent'
 Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maksimr/vim-jsbeautify'
-Plug 'leafgarland/typescript-vim'
+Plug 'einars/js-beautify'
+" Plug 'leafgarland/typescript-vim'
 Plug 'heavenshell/vim-jsdoc'
 
 " Julia
@@ -103,6 +104,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'tomasr/molokai'
 Plug 'fmoralesc/molokayo'
 Plug 'chriskempson/base16-vim'
-Plug 'michaeljsmith/vim-indent-object'
+" Plug 'Valloric/vim-valloric-colorscheme'
 
 call plug#end()

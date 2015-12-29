@@ -21,6 +21,9 @@ let g:mta_use_matchparen_group = 0
 let g:mta_set_default_matching_color = 0
 highlight MatchTag ctermfg=black ctermbg=lightgreen guifg=black guibg=lightgreen
 
+" For light background
+" TODO: If light background detected
+" hi Visual guifg=NONE guibg=#FFDB9D guisp=#3c414c gui=NONE ctermfg=NONE ctermbg=222 cterm=NONE
 
 hi Search term=none cterm=none ctermfg=0 ctermbg=83 guifg=#000000 guibg=#5fff5f
 " hi IncSearch term=reverse cterm=reverse ctermfg=0 ctermbg=83 guifg=#ffffff guibg=#282828

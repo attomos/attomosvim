@@ -18,6 +18,7 @@ autocmd BufRead,BufNewFile *.vim set ts=2 sw=2 sts=2 et
 autocmd BufRead,BufNewFile *.php set sts=0 sw=2 ts=2 noet
 
 autocmd BufNewFile,BufReadPost *.m set filetype=objc
+autocmd BufRead,BufNewFile .jshintrc,.eslintrc,.bowerrc set ft=json
 
 augroup rainbow_lisp
   autocmd!
