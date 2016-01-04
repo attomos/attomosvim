@@ -24,7 +24,11 @@ function! custom_command#run()
     let g:custom_command = 'echo no command'
   endif
   up
-  execute '!' . g:custom_command
+  if has("gui_running")
+    execute 'r!' . g:custom_command
+  else
+    execute '!' . g:custom_command
+  endif
 endfunction
 
 function! custom_command#set()

@@ -236,6 +236,9 @@ let g:signify_sign_overwrite=0
 xmap ig :normal ggVG<CR>
 omap ig :normal ggVG<CR>
 
+" etc
+nnoremap <Leader>cd :cd %:p:h<CR>
+
 " Buffer
 nnoremap <Leader>bd :bdel<CR>
 
