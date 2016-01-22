@@ -233,8 +233,8 @@ xmap ac <plug>(signify-motion-outer-visual)
 let g:signify_sign_overwrite=0
 
 " text object for whole buffer
-xmap ig :normal ggVG<CR>
-omap ig :normal ggVG<CR>
+xmap ie :normal ggVG<CR>
+omap ie :normal ggVG<CR>
 
 " etc
 nnoremap <Leader>cd :cd %:p:h<CR>
